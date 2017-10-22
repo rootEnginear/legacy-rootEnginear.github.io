@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr|Trirong');
+
+*,body {
+  font-family: 'Trirong', serif;
+}
+
+.sans, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mitr', sans-serif;
+}
+
+#CMYK {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+0,00aeef+24,ec008c+25,ec008c+49,fff200+50,fff200+75,000000+76,000000+100 */
+	background: rgb(0,174,239); /* Old browsers */
+	background: -moz-linear-gradient(left, rgb(0,174,239) 0%, rgb(0,174,239) 24%, rgb(236,0,140) 25%, rgb(236,0,140) 49%, rgb(255,242,0) 50%, rgb(255,242,0) 75%, rgb(0,0,0) 76%, rgb(0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+	width: 16vh;
+	height: 4vh;
+	position: fixed;
+	top: 0;
+	right: 3.5vw;
+}
+
+#magenta, #yellow {
+	width: 60vw;
+	height: 60vh;
+	position: fixed;
+}
+
+#magenta {
+	background-color: #ef59a0;
+	top: calc((100vh - 60vh)/2 + 8px);
+	left: calc((100vw - 60vw)/2 - 8px);
+}
+
+#yellow {
+	background-color: #fff200;
+	top: calc((100vh - 60vh)/2 - 8px);
+	left: calc((100vw - 60vw)/2 + 8px);
+	mix-blend-mode: multiply;
+}
+
+#text {
+	font-size: calc(100vh/2/4);
+	color:white;
+	text-align: center;
+	position: fixed;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%,-50%);
+	letter-spacing: 3px;
+}
+
+footer {
+	font-size: calc((2.7vh));
+	color: #777;
+	position: fixed;
+	bottom: 5vh;
+	left: 0;
+	width: 100vw;
+	text-align: center;
+}
+
+@media all and (orientation:portrait) {
+	#text {
+		font-size: calc(100vw/2/4);
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/master.css">
+  <title>rootEnginear.github.io</title>
+</head>
+<body>
+  <div id="CMYK"></div>
+  <div id="magenta"></div>
+  <div id="yellow"></div>
+  <header id="text">
+    <h1>Coming Soon!</h1>
+    <h3>Stay tuned</h3>
+  </header>
+  <footer>Copyright &copy; 2017 rootEnginear All right reversed.</footer>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    $(() => {
+	  $(document).on( "mousemove", updatePos )
+    });
+	
+	var updatePos = (event) => {
+	  var x = event.clientX - $(window).width()/2;
+      var y = event.clientY - $(window).height()/2;
+	  $("#yellow").css("left","calc((100vw - 60vw)/2 + 8px + " + (x/20) + "px)");
+	  $("#yellow").css("top","calc((100vh - 60vh)/2 - 8px - " + (y/20) + "px)");
+	  $("#magenta").css("left","calc((100vw - 60vw)/2 - 8px - " + (x/20) + "px)");
+	  $("#magenta").css("top","calc((100vh - 60vh)/2 + 8px + " + (y/20) + "px)");
+	  $("#text").css("letter-spacing",0 - (Math.abs(x) + Math.abs(y))/100 + 3 + "px");
+	}
+  </script>
+</body>
+</html>
