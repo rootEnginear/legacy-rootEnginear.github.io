@@ -292,16 +292,16 @@
   <a style="display:none;" id="top_btn" href="#top" class="button button-primary button-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>
-    function chkScroll(){
+    function chkScroll(time=500){
       if($(window).scrollTop() <= 220){
-        $("#top_btn").hide(500);
+        $("#top_btn").hide(time);
       }else{
-        $("#top_btn").show(500);
+        $("#top_btn").show(time);
       }
     }
 
     $(function(){
-      chkScroll();
+      chkScroll(0);
     });
 
     $(window).scroll(function(){
