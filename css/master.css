@@ -8,6 +8,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-image: url("../img/bg.png");
+  background-position: 13% 0.5%;
+  background-repeat: no-repeat;
+}
+
 #CMYK {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+0,00aeef+24,ec008c+25,ec008c+49,fff200+50,fff200+75,000000+76,000000+100 */
 	background: rgb(0,174,239); /* Old browsers */
@@ -20,6 +26,7 @@
 	position: fixed;
 	top: 0;
 	right: 3.5vw;
+  z-index: 9999;
 }
 
 img:not(.no-cir) {
