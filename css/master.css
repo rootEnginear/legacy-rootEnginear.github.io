@@ -27,6 +27,7 @@ body {
 	top: 0;
 	right: 3.5vw;
   z-index: 9999;
+  mix-blend-mode: color;
 }
 
 img:not(.no-cir) {

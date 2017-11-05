@@ -225,7 +225,16 @@ input[type="button"].button-primary:focus {
   background-color: #f15a22;
   border-color: #f15a22; }
 
+.button.button-alternate:hover,
+.button.button-alternate:focus {
+  color: #FFF;
+  background-color: #f15a22;
+  border-color: #f15a22;
+}
 
+.button:not(#top_btn) {
+  transition: all 0.3s ease;
+}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
