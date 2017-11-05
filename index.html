@@ -289,16 +289,23 @@
     </div>
   </div>
   <br>
-  <a id="top_btn" href="#top" class="button button-primary button-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  <a style="display:none;" id="top_btn" href="#top" class="button button-primary button-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>
-    $(window).scroll(function(){
-
+    function chkScroll(){
       if($(window).scrollTop() <= 220){
         $("#top_btn").hide(500);
       }else{
         $("#top_btn").show(500);
       }
+    }
+
+    $(function(){
+      chkScroll();
+    });
+
+    $(window).scroll(function(){
+      chkScroll();
     });
 
     /* Smooth Scrolling by https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
