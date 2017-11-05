@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Mitr|Trirong');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 *,body {
-  font-family: 'Trirong', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.sans, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Mitr', sans-serif;
+.heading, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 #CMYK {
@@ -22,48 +22,33 @@
 	right: 3.5vw;
 }
 
-#magenta, #yellow {
-	width: 60vw;
-	height: 60vh;
-	position: fixed;
+img:not(.no-cir) {
+  border-radius: 50%;
 }
 
-#magenta {
-	background-color: #ef59a0;
-	top: calc((100vh - 60vh)/2 + 8px);
-	left: calc((100vw - 60vw)/2 - 8px);
+img.no-cir {
+  border-radius: 15px;
 }
 
-#yellow {
-	background-color: #fff200;
-	top: calc((100vh - 60vh)/2 - 8px);
-	left: calc((100vw - 60vw)/2 + 8px);
-	mix-blend-mode: multiply;
+h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
+  color: #777;
 }
 
-#text {
-	font-size: calc(100vh/2/4);
-	color:white;
-	text-align: center;
-	position: fixed;
-	top: 50vh;
-	left: 50vw;
-	transform: translate(-50%,-50%);
-	letter-spacing: 3px;
+.button-up {
+  position:fixed;
+  right:5vw;
+  bottom:5vh;
+  padding: 0 1.2rem;
+  margin-bottom:0;
 }
 
-footer {
-	font-size: calc((2.7vh));
-	color: #777;
-	position: fixed;
-	bottom: 5vh;
-	left: 0;
-	width: 100vw;
-	text-align: center;
-}
-
-@media all and (orientation:portrait) {
-	#text {
-		font-size: calc(100vw/2/4);
-	}
+@media (max-width: 550px) {
+  .button.button-primary.button-up {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    border: 0px;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.75);
+  }
 }

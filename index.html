@@ -5,34 +5,339 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/master.css">
-  <title>rootEnginear.github.io</title>
+  <title>rootEnginear's Dev-folio</title>
 </head>
-<body>
+<body id="top">
   <div id="CMYK"></div>
-  <div id="magenta"></div>
-  <div id="yellow"></div>
-  <header id="text">
-    <h1>Coming Soon!</h1>
-    <h3>Stay tuned</h3>
-  </header>
-  <footer>Copyright &copy; 2017 rootEnginear All right reversed.</footer>
-  
+  <br><br><br>
+  <div class="container">
+    <div id="basicInfo" class="r">
+      <div class="c c4">
+        <img src="img/prof.jpg" alt="Suthep Chanchuphol">
+      </div>
+      <div class="c c8 tr tc-s">
+        <h1>Suthep Chanchuphol</h1>
+        <h5 style="color:#777">&mdash;&nbsp;&nbsp;Be curious, be stupid.</h5>
+        <hr style="margin-bottom:2rem;">
+        <table class="u-full-width no-bd no-pdtb">
+          <tr><td class="tr">17 years old</td><td class="tc"><i class="fa fa-birthday-cake" aria-hidden="true"></i></td></tr>
+          <tr><td class="tr">Intensive English Program, Benchamaracharungsarit School</td><td class="tc"><i class="fa fa-graduation-cap" aria-hidden="true"></i></td></tr>
+          <tr><td class="tr">Chachoengsao, Thailand</td><td class="tc"><i class="fa fa-map-marker" aria-hidden="true"></i></td></tr>
+          <tr><td class="tr"><a href="mailto:moo_suthep@hotmail.com">moo_suthep@hotmail.com</a></td><td class="tc"><i class="fa fa-envelope" aria-hidden="true"></i></td></tr>
+          <tr><td class="tr"><a href="https://github.com/rootEnginear">See my repositories</a></td><td class="tc"><i class="fa fa-github-alt" aria-hidden="true"></i></td></tr>
+        </table>
+      </div>
+    </div>
+    <br>
+    <nav id="nav" class="tc">
+      <a class="button" href="#computerSkill">Computer Skills</a>&emsp;
+      <a class="button" href="#comActivity">Computer Activities</a>&emsp;
+      <a class="button" href="#comCompetition">Computer Competitions</a>&emsp;
+      <a class="button" href="#comWork">Computer Works</a>&emsp;
+      <a class="button" href="#talent">My Talent</a>&emsp;
+      <a class="button" href="#volunteering">Volunteering Activity</a>&emsp;
+      <a class="button" href="#scholarship">Scholarships</a>
+    </nav>
+    <hr id="computerSkill">
+    <div>
+      <h3>Computer Skills</h3>
+      <hr>
+      <div class="r bar">
+        <div class="c c8">
+          <p><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Web Development
+            <ul>
+              <li>HTML, CSS</li>
+              <li>JavaScript</li>
+              <li>AMP Stack (Apache, MySQL, PHP)</li>
+            </ul>
+          </p>
+          <p><i class="fa fa-terminal" aria-hidden="true"></i>&nbsp;&nbsp;Programming
+            <ul>
+              <li>C</li>
+              <li>Ruby</li>
+            </ul>
+          </p>
+          <p><i class="fa fa-microchip" aria-hidden="true"></i>&nbsp;&nbsp;Microcontroller
+            <ul>
+              <li>Arduino</li>
+              <li>NodeMCU</li>
+            </ul>
+          </p>
+          <p><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;&nbsp;Other skills
+            <ul>
+              <li>Game making (RPG Maker, Construct 2)</li>
+              <li>Designing (Photoshop, Illustrator)</li>
+              <li>Database</li>
+              <li>Circuit</li>
+            </ul>
+          </p>
+        </div>
+        <div class="c c4">
+          <img src="img/compSkill1.JPG" alt="Me coding"><br>
+          <img src="img/compSkill2.jpg" alt="Me coding too" class="h-s">
+        </div>
+      </div>
+    </div>
+    <br id="comActivity">
+    <div>
+      <h3>Computer Activities</h3>
+      <hr>
+      <div class="r">
+        <div class="c c4">
+          <img id="comcamp" src="img/comcamp1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>ComCamp #13 <small>@KMUTT</small></h5>
+          <p>Learnt about C Programming, Arduino with POP-BOT, Basic web development, Linux and bash, Computer hardware; Moreover, knew more about Computer Engineering Department, students' studying and living.</p>
+        </div>
+      </div>
+      <div class="r">
+        <div class="c c4 u-pull-right">
+          <img id="jwc" src="img/jwc1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>Junior Webmaster Camp #9 <small style="white-space: nowrap">by Thai Webmaster Association</small></h5>
+          <p>Learnt about how to work with others in this job, how to create good and interesting designs and contents for website, problems which every sites have to face; not only user hadling, but also financial and marketing problems.</p>
+        </div>
+      </div>
+      <div class="r">
+        <div class="c c4">
+          <img id="itcamp" src="img/itc1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>IT Camp #13 <small>@KMITL</small></h5>
+          <p>Learnt about "Internet of Things" technology, and developed a project "Plant monitoring system".</p>
+        </div>
+      </div>
+      <div class="r">
+        <div class="c c4 u-pull-right">
+          <img id="tsh" src="img/tsh1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>The Stupid Hackathon</h5>
+          <p>Learnt how to develop a Facebook chatbot playing 'Pahi' games with Node.js.</p>
+        </div>
+      </div>
+    </div>
+    <br id="comCompetition">
+    <div>
+      <h3>Computer Competitions</h3>
+      <hr>
+      <div class="r">
+        <div class="c c4">
+          <img id="comcamp" src="img/sillapa1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>Web Application <small style="white-space: nowrap">- Sillapa #65</small></h5>
+          <p>Got the 5<sup>th</sup> place in Web Application competition (Regional round) by Bureau of Student Activity Development in 2016.</p>
+        </div>
+      </div>
+      <div class="r">
+        <div class="c c4 u-pull-right">
+          <img id="jwc" src="img/phpjs1.jpg">
+        </div>
+        <div class="c c8">
+          <br><br>
+          <h5>Developed a website with PHP and JS <small style="white-space: nowrap">- IT Openhouse 2017 @KMITL</small></h5>
+          <p>Got the 1<sup>st</sup> place in Developed a website with PHP and JavaScript by Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang in 2017.</p>
+        </div>
+      </div>
+    </div>
+    <br id="comWork">
+    <div>
+      <h3>Computer Works</h3>
+      <hr>
+      <br>
+      <div class="r">
+        <div class="c c4">
+          <img class="no-cir" onclick="location.href=this.src" src="img/comdep1.jpg">
+        </div>
+        <div class="c c8">
+          <h5>Computer Department Website</h5>
+          <p>
+            Developed School's Computer Department website which has a database system to store personnel and subject data, activities, news, etc.<br>
+            <strong>Developed by: </strong>AMP Stack (Apache, MySQL, PHP)
+          </p>
+          <a class="button button-primary" href="http://computer.brr.ac.th/"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a>
+        </div>
+      </div>
+      <br>
+      <div class="r">
+        <div class="c c4 u-pull-right">
+          <img class="no-cir" onclick="location.href=this.src" src="img/amara1.jpg">
+        </div>
+        <div class="c c8">
+          <h5>Amara <small style="white-space: nowrap">- Programming in Thai language</small></h5>
+          <p>
+            Programming is good in these days, but many students encountered several problems in programming. One of the problems is that, they don't under stand what do commands and functions mean. So Amara comes to help and makes them understand how programming works better.<br>
+            <strong>Developed by: </strong>JavaScript, PHP
+          </p>
+          <a class="button button-primary" href="https://goo.gl/4WfBsP"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a>&emsp;<a class="button" href="https://github.com/rootEnginear/Amara"><i class="fa fa-code-fork" aria-hidden="true"></i> Git repository</a>&emsp;<a class="button" href="files/amara_doc.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Documentation (TH)</a>
+        </div>
+      </div>
+      <br>
+      <div class="r">
+        <div class="c c4">
+          <img class="no-cir" onclick="location.href=this.src" src="img/iop1.jpg">
+        </div>
+        <div class="c c8">
+          <h5>ioPlug <small style="white-space: nowrap">- Internet Controlled Plug</small></h5>
+          <p>
+            Developed a science project callec "ioPlug" with "Internet of Things" technology, to help people turn off their electrical appliances in case they are forgot. And help people with disability or Alzheimer.<br>
+            <strong>Developed by: </strong>NodeMCU V.3, PHP, MySQL
+          </p>
+          <a class="button button-primary" href="https://goo.gl/3XUPdt"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a>&emsp;<a class="button" href="https://github.com/rootEnginear/ioPlug-online-controller"><i class="fa fa-code-fork" aria-hidden="true"></i> Git repository</a>&emsp;<a class="button" href="files/wirelessPlug_doc.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Documentation (TH)</a>
+        </div>
+      </div>
+      <br>
+      <div class="r">
+        <div class="c c4 u-pull-right">
+          <img class="no-cir" onclick="location.href=this.src" src="img/seat1.jpg">
+        </div>
+        <div class="c c8">
+          <h5>SeatKeeper <small style="white-space: nowrap">- Seat randomizer</small></h5>
+          <p>
+            Developed to help students randomize their seat.<br>
+            <strong>Developed by: </strong>PHP, JavaScript
+          </p>
+          <a class="button button-primary" href="https://goo.gl/MToUqc"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a>&emsp;<a class="button" href="files/SeatKeeper_doc.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Documentation (EN)</a>
+        </div>
+      </div>
+      <br><br>
+      <div id="otherWork">
+        <h5>My other works</h5>
+        <table class="u-full-width">
+          <tr><th>#</th><th>Name</th><th>Description</th><th>Developed by</th><th>Link/Repository</th></tr>
+          <tr><td>1</td><td>MateCheckr</td><td>Learnt how to develop checkers with object oriented programming</td><td>JavaScript (p5.js)</td><td><a class="button button-primary" href="https://rootenginear.github.io/MateCheckr/"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a>&emsp;<a class="button" href="https://github.com/rootEnginear/MateCheckr"><i class="fa fa-code-fork" aria-hidden="true"></i> Repository</a></td></tr>
+          <tr><td>2</td><td>Pahi</td><td>Learnt how to develop a Facebook chatbot playing 'Pahi' games with Node.js.</td><td>JavaScript</td><td><a class="button" href="https://github.com/StupidHackTH/pahi"><i class="fa fa-code-fork" aria-hidden="true"></i> Repository</a></td></tr>
+          <tr><td>3</td><td>School's website welcome page.</td><td>School's website welcome page in my style. Doing for practicing.</td><td>HTML, CSS</td><td><a class="button button-primary" href="https://goo.gl/QgvoNp"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a></td></tr>
+          <tr><td>4</td><td>Sufficient Economy Game</td><td>Sample game to teach computer club's member to make a simple game.</td><td>Construct 2</td><td><a class="button button-primary" href="https://goo.gl/bHgtRe"><i class="fa fa-external-link" aria-hidden="true"></i> Visit</a></td></tr>
+        </table>
+      </div>
+    </div>
+    <br id="talent">
+    <div>
+      <h3>My Talent</h3>
+      <hr>
+      <div class="r">
+        <div class="c c4">
+          <img src="img/colorguard1.jpg" alt="Me playing Color Guard">
+        </div>
+        <div class="c c8">
+          <br>
+          <p>
+            I play a Flute and do Color Guard with school band. We had been in lots of competitions:
+            <ul>
+              <li>1<sup>st</sup> place in 35<sup>th</sup> International Student Band Competition (Type B), rewarded a trophy from His Majesty King Maha Vajiralongkorn Bodindradebayavarangkun</li>
+              <li>1<sup>st</sup> place in Central Region Student Band Competition 2016, rewarded a trophy from Department of Physical Education, Ministry of Tourism &amp; Sports</li>
+              <li>2<sup>nd</sup> place in Color Guard Competition 2016 (Scholastic Division), rewarded a trophy from Department of Physical Education, Ministry of Tourism &amp; Sports</li>
+              <li>8<sup>th</sup> place in Folk Song Band Competition 2016 (National round) by Bureau of Student Activity Development</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br id="volunteering">
+    <div>
+      <h3>Volunteering Activity</h3>
+      <hr>
+      <div class="r">
+        <div class="c c4">
+          <img src="img/itjc1.JPG" alt="Me teaching kids in IT Junior Camp">
+        </div>
+        <div class="c c8">
+          <br>
+          <h5>IT Junior Camp 2016</h5>
+          <p>I taught 7<sup>th</sup> - 9<sup>th</sup> grade students to learn how to build a game from Kodu Game Lab and how to edit a picture with Adobe Photoshop.</p>
+        </div>
+      </div>
+    </div>
+    <br id="scholarship">
+    <div>
+      <h3>Scholarships</h3>
+      <hr>
+      <div class="r">
+        <div class="c c4">
+          <img src="img/scholarship1.jpg" alt="Me with the scholarship">
+        </div>
+        <div class="c c8">
+          <table class="u-full-width">
+            <tr><th>#</th><th>Description</th><th>Prize</th></tr>
+            <tr><td>1</td><td>Scored the most in Intensive English Program entrance exam.</td><td>10,000 THB</td></tr>
+            <tr><td>2</td><td>Recieved 'เบญจม การุณย์' scholarship as the student who is the activist, has good manner and reputation.</td><td>10,000 THB</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr class="h-s">
+    <div id="foot" class="r">
+      <div class="c c12 tc">
+        <footer>
+          Copyright &copy; 2017 rootEnginear All right reserved.<br>
+          <small>Powered by Skeleton, FontAwesome, and jQuery</small>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <br>
+  <a id="top_btn" href="#top" class="button button-primary button-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>
-    $(() => {
-	  $(document).on( "mousemove", updatePos )
+    $(window).scroll(function(){
+
+      if($(window).scrollTop() <= 220){
+        $("#top_btn").hide(500);
+      }else{
+        $("#top_btn").show(500);
+      }
     });
-	
-	var updatePos = (event) => {
-	  var x = event.clientX - $(window).width()/2;
-      var y = event.clientY - $(window).height()/2;
-	  $("#yellow").css("left","calc((100vw - 60vw)/2 + 8px + " + (x/20) + "px)");
-	  $("#yellow").css("top","calc((100vh - 60vh)/2 - 8px - " + (y/20) + "px)");
-	  $("#magenta").css("left","calc((100vw - 60vw)/2 - 8px - " + (x/20) + "px)");
-	  $("#magenta").css("top","calc((100vh - 60vh)/2 + 8px + " + (y/20) + "px)");
-	  $("#text").css("letter-spacing",0 - (Math.abs(x) + Math.abs(y))/100 + 3 + "px");
-	}
+
+    /* Smooth Scrolling by https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
   </script>
 </body>
 </html>
