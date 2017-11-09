@@ -278,7 +278,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #f15a22;
   outline: 0; }
 label,
 legend {
@@ -346,6 +346,13 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
+th {
+  font-weight: bold;
+}
+
+table.no-bd th, table.no-bd td {
+  border: none;
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

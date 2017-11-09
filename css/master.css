@@ -35,7 +35,11 @@ img:not(.no-cir) {
 }
 
 img.no-cir {
-  border-radius: 15px;
+  border-radius: 5px;
+}
+
+img {
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.05);
 }
 
 h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
@@ -59,4 +63,62 @@ h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
     border-radius: 0;
     background-color: rgba(0,0,0,0.75);
   }
+}
+
+@keyframes blinky {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blinky 0.9s linear;
+  animation-iteration-count: infinite;
+}
+
+.bar {
+  position: relative;
+  left:32px;
+  margin: 2px 4px;
+  padding: 0;
+  width: calc(100% - 64px);
+  box-sizing: border-box;
+  background-color: #fff200;
+  display: inline-block;
+  border-radius: 8px 4px;
+  height: 16px;
+}
+
+.bar>div {
+  transform-origin: left;
+  box-sizing: border-box;
+  background-color: #ef5ba1;
+  mix-blend-mode: multiply;
+  position: relative;
+  bottom: -4px;
+  left: -4px;
+  border-radius: 4px 8px 8px 4px;
+  height: 16px;
+}
+
+.bar>div>span {
+  color: #222;
+  position: relative;
+  left: calc(100% + 0.5ch);
+  top: -1ch;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.skillContent>p>span{
+  font-weight: bold;
 }
