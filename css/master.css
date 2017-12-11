@@ -99,7 +99,7 @@ h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
 }
 
 .bar>div {
-  transform-origin: left;
+  transform-origin: bottom left;
   box-sizing: border-box;
   background-color: #ef5ba1;
   mix-blend-mode: multiply;
@@ -121,4 +121,19 @@ h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
 
 .skillContent>p>span{
   font-weight: bold;
+}
+
+@keyframes bobble {
+  0%{
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
+  16.67%{
+    transform: scaleX(1.01);
+    animation-timing-function: ease-out;
+  }
+  33.33%{
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
 }
