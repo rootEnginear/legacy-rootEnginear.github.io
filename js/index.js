@@ -23,6 +23,7 @@ $(function(){
     delayStr = (Math.floor(Math.random()*(6*3+1))/6) + "s"; // ความละเอียด*เวลาทั้งหมด / ความละเอียด
     $(this).css({ "animation": "bobble 3s " + delayStr + " infinite" });
   });
+  $("#copyright").html(new Date().getFullYear());
 });
 
 $(window).resize(adjustBg);
