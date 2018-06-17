@@ -15,17 +15,17 @@ body {
 }
 
 #CMYK {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+0,00aeef+24,ec008c+25,ec008c+49,fff200+50,fff200+75,000000+76,000000+100 */
-	background: rgb(0,174,239); /* Old browsers */
-	background: -moz-linear-gradient(left, rgb(0,174,239) 0%, rgb(0,174,239) 24%, rgb(236,0,140) 25%, rgb(236,0,140) 49%, rgb(255,242,0) 50%, rgb(255,242,0) 75%, rgb(0,0,0) 76%, rgb(0,0,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-	width: 16vh;
-	height: 4vh;
-	position: fixed;
-	top: 0;
-	right: 3.5vw;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+0,00aeef+24,ec008c+25,ec008c+49,fff200+50,fff200+75,000000+76,000000+100 */
+  background: rgb(0,174,239); /* Old browsers */
+  background: -moz-linear-gradient(left, rgb(0,174,239) 0%, rgb(0,174,239) 24%, rgb(236,0,140) 25%, rgb(236,0,140) 49%, rgb(255,242,0) 50%, rgb(255,242,0) 75%, rgb(0,0,0) 76%, rgb(0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgb(0,174,239) 0%,rgb(0,174,239) 24%,rgb(236,0,140) 25%,rgb(236,0,140) 49%,rgb(255,242,0) 50%,rgb(255,242,0) 75%,rgb(0,0,0) 76%,rgb(0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+  width: 16vh;
+  height: 4vh;
+  position: fixed;
+  top: 0;
+  right: 3.5vw;
   z-index: 9999;
   mix-blend-mode: color;
 }
