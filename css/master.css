@@ -137,3 +137,55 @@ h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
     animation-timing-function: ease-in;
   }
 }
+
+.overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  z-index: 99;
+  background: #000;
+  pointer-events: none; /* The click will pass through */
+  opacity: 0;
+  /* transform: scale(.5); */
+  /* transition: transform .5s ease, opacity .5s ease; */
+  transition: opacity .5s ease;
+  transition-delay: .1s;
+}
+
+input[type="checkbox"]:checked ~ .overlay {
+  pointer-events: auto;
+  opacity: .8;
+  /* transform: scale(1); */
+  /* transition: transform .5s ease, opacity .5s ease; */
+  transition: opacity .5s ease;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%,0%);
+  width: 100%;
+  max-width: 640px;
+  pointer-events: none;
+  opacity: 0;
+  transition: transform .5s ease, opacity .5s ease;
+}
+
+input[type="checkbox"]:checked ~ .modal {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translate(-50%,-50%);
+  transition: transform .5s ease, opacity .5s ease;
+  transition-delay: .1s;
+}
+
+.modal__content {
+  display: block;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+}

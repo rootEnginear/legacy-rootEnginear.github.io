@@ -25,6 +25,7 @@ $(function(){
   });
   $("#copyright").html(new Date().getFullYear());
   $("#age").html(new Date(new Date() - new Date("2000 Feb 7")).getFullYear() - 1970) // If you birth on dd/mm/yyyy you have to use the date dd+2/mm/yyyy
+  $("#modal01").prop("checked", true);
 });
 
 $(window).resize(adjustBg);

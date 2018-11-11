@@ -2,8 +2,8 @@
 > Be curious, be stupid.
 
 - Born in 2000
-- Intensive English Program, Benchamaracharungsarit School
-- Chachoengsao, Thailand	
+- Computer Engineering, King Mongkut's University of Technology Thonburi
+- Chachoengsao, Thailand
 - [moo_suthep@hotmail.com](mailto:moo_suthep@hotmail.com)
 
 ## Computer Skills
