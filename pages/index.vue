@@ -1,14 +1,34 @@
 <template>
-  <div class="container">
-    <nuxt-content :document="doc" />
-  </div>
+  <article>
+    <header>
+      <nuxt-content v-if="header" :document="header" />
+    </header>
+    <hr v-if="header" style="margin:.4rem 0" />
+    <div class="columns">
+      <aside v-if="doc.toc.length" class="column col-3 col-md-12">
+        <ul class="menu toc-sticky">
+          <li class="divider" data-content="TABLE OF CONTENTS">
+            <span>Table of contents</span>
+          </li>
+          <li v-for="header in doc.toc" :key="header.id" class="menu-item">
+            <a @click="gotoHash(header.id)">{{ header.text }}</a>
+          </li>
+        </ul>
+        <br />
+      </aside>
+      <main :class="{ column: 1, 'col-9': doc.toc.length, 'col-md-12': 1 }">
+        <nuxt-content :document="doc" />
+      </main>
+    </div>
+  </article>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ $content, params }) {
     const doc = await $content("index").fetch();
-    return { doc };
+    const header = await $content("header/index").fetch();
+    return { doc, header };
   },
   head() {
     return {
@@ -24,6 +44,25 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    gotoHash(hash) {
+      window.scrollTo(
+        0,
+        document.getElementById(hash).getBoundingClientRect().top +
+          window.scrollY
+      );
+    }
   }
 };
 </script>
+
+<style scoped>
+@media (min-width: 841px) {
+  .toc-sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0.4rem;
+  }
+}
+</style>

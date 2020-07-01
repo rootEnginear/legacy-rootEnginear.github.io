@@ -11,7 +11,7 @@
     "generate": "nuxt build && nuxt export"
   },
   "dependencies": {
-    "@nuxt/content": "^1.3.2",
+    "@nuxt/content": "1.3.2",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {}

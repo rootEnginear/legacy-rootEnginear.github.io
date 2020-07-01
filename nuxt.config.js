@@ -48,7 +48,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ["~/plugins/global.js"],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -69,7 +69,13 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
-  content: {},
+  content: {
+    markdown: {
+      autolinkHeadings: {
+        content: {}
+      }
+    }
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
