@@ -1,25 +1,20 @@
-# Suthep Chanchuphol
-> Be curious, be stupid.
+# rootenginear
 
-- Born in 2000
-- Computer Engineering, King Mongkut's University of Technology Thonburi
-- Chachoengsao, Thailand
-- [moo_suthep@hotmail.com](mailto:moo_suthep@hotmail.com)
+## Build Setup
 
-## Computer Skills
-- Web Development
-  - HTML, CSS
-  - JavaScript
-  - AMP Stack (Apache, PHP, MySQL)
-- Microcontroller
-  - Arduino
-  - NodeMCU V.3
-- Programming
-  - C
-  - Ruby
-- Other skills
-  - Game making (RPG Maker, Construct 2)
-  - Designing (Photoshop, Illustrator)
-  - Database
-  
-For more information, please see on [the page](https://rootenginear.github.io/).
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
