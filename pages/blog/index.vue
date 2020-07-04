@@ -1,0 +1,89 @@
+<template>
+  <div>
+    <h1>Blog</h1>
+    <div v-if="docs.length" class="columns">
+      <div
+        v-for="doc in docs"
+        :key="doc.slug"
+        class="column col-xs-12 col-md-6 col-lg-4 col-3 pb-2 d-flex"
+      >
+        <nuxt-link
+          :to="doc.path"
+          class="text-dark d-flex"
+          style="text-decoration:none;flex:1 1 0"
+        >
+          <div class="card c-hand" style="width:100%">
+            <div class="card-image">
+              <!-- picture max dimension: 404px -->
+              <m-picture
+                :data-images="[
+                  {
+                    src: doc.image || 'no_image.jpg',
+                    type: 'image/jpeg'
+                  }
+                ]"
+                base-path=""
+                :alt="doc.title"
+                responsive
+              />
+            </div>
+            <div class="card-header">
+              <div class="card-title h5">{{ doc.title }}</div>
+            </div>
+            <div v-if="doc.description" class="card-body">
+              {{ doc.description }}
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+    </div>
+    <div v-else class="no-article">
+      <span class="emoji">¯\_(ツ)_/¯</span>
+      <h2>No articles!</h2>
+      <p>Yet, I might write some soon!</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const docs = await $content("blog").fetch();
+    return { docs };
+  },
+  head() {
+    return {
+      title: "Blog",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Blog of @rootEnginear"
+        }
+      ]
+    };
+  },
+  methods: {
+    gotoArticle(path) {
+      this.$router.push(path);
+    }
+  }
+};
+</script>
+
+<style scoped>
+.no-article {
+  text-align: center;
+}
+
+.no-article > .emoji {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+.no-article > h2 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+</style>

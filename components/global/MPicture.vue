@@ -56,7 +56,12 @@ export default {
     // block
     block: Boolean,
     // parallax
-    parallax: Boolean
+    parallax: Boolean,
+    // base route
+    basePath: {
+      type: String,
+      default: "blog/"
+    }
   },
   mounted() {
     // Lazy Load
@@ -127,7 +132,7 @@ export default {
     import_images() {
       return this.dataImages.map(({ src, type }) => {
         return {
-          src: require(`~/assets/${src}`),
+          src: require(`~/assets/${this.basePath}${src}`),
           type
         };
       });
@@ -163,17 +168,20 @@ export default {
         window.requestAnimationFrame(this.updateParallax);
     },
     updateParallax() {
+      let half_window = window.innerHeight / 2;
+      let picture_top_rect =
+        (this.$refs.picture_element &&
+          this.$refs.picture_element.getBoundingClientRect().top) ||
+        0;
+      let half_picture_height =
+        ((this.$refs.picture_element &&
+          this.$refs.picture_element.clientHeight) ||
+          0) / 2;
       this.parallax_offset = (
         0 -
-        (window.innerHeight / 2 -
-          (this.$refs.picture_element &&
-            this.$refs.picture_element.getBoundingClientRect().top) || 0) /
-          2
+        (half_window - picture_top_rect + half_picture_height) / 2
       ).toFixed(2);
     }
   }
 };
 </script>
-
-<style>
-</style>

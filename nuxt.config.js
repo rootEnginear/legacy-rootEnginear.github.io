@@ -17,38 +17,116 @@ export default {
     htmlAttrs: {
       lang: "th"
     },
-    title: process.env.npm_package_name || "",
+    title: "An untitled page",
+    titleTemplate: "%s - All about @rootEnginear",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "Keep coding and seeking new possibilities."
       }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: "stylesheet",
-        href: "https://unpkg.com/spectre.css/dist/spectre.min.css"
+        rel: "preconnect",
+        href: "https://cdn.jsdelivr.net"
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://cdn.jsdelivr.net"
       },
       {
         rel: "stylesheet",
         href:
-          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+          "https://cdn.jsdelivr.net/gh/picturepan2/spectre/dist/spectre.min.css"
+      },
+      {
+        rel: "preload",
+        as: "style",
+        href:
+          "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css",
+        onload: "this.onload=null;this.rel='stylesheet'"
+      },
+      {
+        rel: "preload",
+        as: "style",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
+        integrity:
+          "sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq",
+        crossorigin: "anonymous",
+        onload: "this.onload=null;this.rel='stylesheet'"
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff2",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Regular.woff2",
+        crossorigin: ""
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff",
+        crossorigin: ""
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/ttf",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf",
+        crossorigin: ""
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff2",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Bold.woff2",
+        crossorigin: ""
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff",
+        crossorigin: ""
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/ttf",
+        href:
+          "https://cdn.jsdelivr.net/gh/IBM/plex/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Bold.ttf",
+        crossorigin: ""
       }
-    ]
+    ],
+    noscript: [
+      {
+        innerHTML: `
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    `
+      }
+    ],
+    __dangerouslyDisableSanitizers: ["noscript"]
   },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~/css/fonts.css", "~/css/main.css"],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ["~/plugins/global.js"],
+  plugins: [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -71,9 +149,16 @@ export default {
    */
   content: {
     markdown: {
-      autolinkHeadings: {
-        content: {}
-      }
+      remarkPlugins: () => [
+        "remark-squeeze-paragraphs",
+        "remark-slug",
+        "remark-external-links",
+        "remark-math",
+        "remark-sub-super",
+        "remark-unwrap-images",
+        "remark-attr"
+      ],
+      rehypePlugins: ["rehype-katex"]
     }
   },
   /*

@@ -6,11 +6,13 @@ profileImages:
     type: "image/jpeg"
 ---
 
-<div class="columns col-gapless"><div class="column col-sm-12 col-9">
+<div class="columns"><div class="column col-xs-12 col-md-7 col-lg-8 col-9">
 
 # Suthep Chanchuphol
 
 > Frontend Developer
+
+Good to see you! Apart from my name, you can called me Mumú. I'm 3^rd^ year computer-engineering student at KMUTT. Love coding and seeking new possibilities.
 
 <table>
   <tbody>
@@ -45,8 +47,8 @@ profileImages:
   </tbody>
 </table>
 
-</div><div class="column col-sm-12 col-3" style="display:flex;align-items:center">
+</div><div class="column col-xs-12 col-md-5 col-lg-4 col-3" style="display:flex;align-items:center">
 
-<m-picture :data-images="profileImages" alt="Suthep Chanchuphol" responsive img-class="s-circle"></m-picture>
+<m-picture :data-images="profileImages" alt="Suthep Chanchuphol" base-path="" responsive img-class="s-circle"></m-picture>
 
 </div></div>

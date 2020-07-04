@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 32px 6%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  font-family: "IBM Plex Sans", "IBM Plex Sans Thai Looped", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+}
+
+hr {
+  border: none;
+  border-top: 0.05rem solid #f1f3f5;
+  height: 0.05rem;
+  margin: 0.8rem 0;
+}
+
+ol,
+ul {
+  margin: 0.8rem 0 0.8rem 1rem;
+  list-style-position: outside;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:visited {
+  color: #5755d9;
+}
+
+a:visited:hover {
+  color: #302ecd;
+}
+
+.divider > span {
+  display: none;
+}
+
+pre > code {
+  background: initial;
+  border-radius: initial;
+  color: initial;
+  font-size: 0.75rem;
+  line-height: initial;
+  padding: initial;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "JetBrains Mono", "IBM Plex Sans Thai Looped Medium", monospace;
+}
+
+.main-navigation > a {
+  margin-left: 0.4rem;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(10%);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(-10%);
+}

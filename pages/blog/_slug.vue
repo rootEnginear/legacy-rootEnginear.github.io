@@ -1,6 +1,7 @@
 <template>
   <article>
     <header>
+      <h1>{{ doc.title }}</h1>
       <nuxt-content v-if="header" :document="header" />
     </header>
     <hr v-if="header" />
@@ -24,12 +25,18 @@
 </template>
 
 <script>
-import NUXT_CONFIG from "../nuxt.config";
+import NUXT_CONFIG from "../../nuxt.config";
+const CONTENT_PATH = "blog/";
 
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content("index").fetch();
-    const header = await $content("header/index").fetch();
+    let header;
+    try {
+      header = await $content(
+        CONTENT_PATH + "header/" + (params.slug || "../index")
+      ).fetch();
+    } catch (e) {}
+    const doc = await $content(CONTENT_PATH, params.slug || "../index").fetch();
     return { doc, header };
   },
   head() {
@@ -42,7 +49,9 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.doc.description || NUXT_CONFIG.head.meta[2].content
+          content:
+            this.doc.description ||
+            this.doc.title + " - All about @rootEnginear"
         }
       ]
     };
