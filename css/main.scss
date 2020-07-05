@@ -8,7 +8,7 @@ body {
   min-height: -webkit-fill-available;
   font-family: "IBM Plex Sans", "IBM Plex Sans Thai Looped", sans-serif;
   line-height: 1.7;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +27,7 @@ h6,
 .h6 {
   font-weight: 700;
   text-rendering: optimizeLegibility;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
 
 hr {
@@ -93,6 +93,10 @@ pre > code {
   width: 1rem;
   position: relative;
   top: 0.25rem;
+}
+
+.menu .menu-item > a.indent::before {
+  content: "— ";
 }
 
 .page-enter-active,

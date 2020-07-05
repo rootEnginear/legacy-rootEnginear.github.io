@@ -13,7 +13,11 @@
             <span>Table of contents</span>
           </li>
           <li v-for="header in doc.toc" :key="header.id" class="menu-item">
-            <a @click="gotoHash(header.id)">{{ header.text }}</a>
+            <a
+              :class="{ indent: header.depth === 3 }"
+              @click="gotoHash(header.id)"
+              >{{ header.text }}</a
+            >
           </li>
         </ul>
         <br />
@@ -62,7 +66,8 @@ export default {
       window.scrollTo(
         0,
         document.getElementById(hash).getBoundingClientRect().top +
-          window.scrollY
+          window.scrollY -
+          16
       );
     }
   }
