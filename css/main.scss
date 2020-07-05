@@ -39,24 +39,27 @@ hr {
 
 ol,
 ul {
-  margin: 0.8rem 0 0.8rem 1rem;
+  margin: 0 0 0.8rem 1rem;
   list-style-position: outside;
 }
 
 a {
   cursor: pointer;
+
+  &:visited {
+    color: #5755d9;
+
+    &:hover {
+      color: #302ecd;
+    }
+  }
 }
 
-a:visited {
-  color: #5755d9;
-}
-
-a:visited:hover {
-  color: #302ecd;
-}
-
-.divider > span {
-  display: none;
+code,
+kbd,
+pre,
+samp {
+  font-family: "JetBrains Mono", "IBM Plex Sans Thai Looped Medium", monospace;
 }
 
 pre > code {
@@ -68,15 +71,28 @@ pre > code {
   padding: initial;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: "JetBrains Mono", "IBM Plex Sans Thai Looped Medium", monospace;
+.divider > span {
+  display: none;
 }
 
 .main-navigation > a {
   margin-left: 0.4rem;
+}
+
+.nuxt-content {
+  p[t] {
+    font-weight: 700;
+    margin: 0;
+  }
+  p[m0] {
+    margin: 0;
+  }
+}
+
+.emoji {
+  width: 1rem;
+  position: relative;
+  top: 0.25rem;
 }
 
 .page-enter-active,

@@ -71,19 +71,19 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .no-article {
   text-align: center;
-}
 
-.no-article > .emoji {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -4px;
-}
+  > .emoji {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -4px;
+  }
 
-.no-article > h2 {
-  margin: 0;
-  letter-spacing: 1px;
+  > h2 {
+    margin: 0;
+    letter-spacing: 1px;
+  }
 }
 </style>

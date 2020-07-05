@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import NUXT_CONFIG from "../nuxt.config";
+import NUXT_CONFIG from "~/nuxt.config";
 
 export default {
   async asyncData({ $content, params }) {

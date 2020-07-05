@@ -2,6 +2,7 @@
   <article>
     <header>
       <h1>{{ doc.title }}</h1>
+      <blockquote v-if="doc.description">{{ doc.description }}</blockquote>
       <nuxt-content v-if="header" :document="header" />
     </header>
     <hr v-if="header" />
@@ -25,7 +26,7 @@
 </template>
 
 <script>
-import NUXT_CONFIG from "../../nuxt.config";
+import NUXT_CONFIG from "~/nuxt.config";
 const CONTENT_PATH = "blog/";
 
 export default {
