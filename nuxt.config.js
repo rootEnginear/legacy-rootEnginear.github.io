@@ -46,13 +46,6 @@ export default {
       {
         rel: "preload",
         as: "style",
-        href:
-          "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css",
-        onload: "this.onload=null;this.rel='stylesheet'"
-      },
-      {
-        rel: "preload",
-        as: "style",
         href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
         integrity:
           "sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq",
@@ -111,7 +104,6 @@ export default {
     noscript: [
       {
         innerHTML: `
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
         <link rel="stylesheet" href="/no-script.css">
         `

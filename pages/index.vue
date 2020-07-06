@@ -48,6 +48,35 @@ export default {
           name: "description",
           content: this.doc.description || NUXT_CONFIG.head.meta[2].content
         }
+      ],
+      script: [
+        {
+          defer: true,
+          src: "https://use.fontawesome.com/releases/v5.13.1/js/solid.js",
+          integrity:
+            "sha384-81RFXCmeESYg4G/uFGo6Tu/eeK3klw0oKItW3nPhi2BuryJcE4lkOkwWsW6jzoNz",
+          crossorigin: "anonymous"
+        },
+        {
+          defer: true,
+          src: "https://use.fontawesome.com/releases/v5.13.1/js/brands.js",
+          integrity:
+            "sha384-Ay9V1h0l5sywM7gJ5YvOc05QytfKqZAElRgqU5kPcIIUAUBqLOYwu9gnW6p5t/FN",
+          crossorigin: "anonymous"
+        },
+        {
+          defer: true,
+          src: "https://use.fontawesome.com/releases/v5.13.1/js/fontawesome.js",
+          integrity:
+            "sha384-4NJBLvz0eHSgtSVDb+VOLh4cxmVluIBqCaNw97NvJAo18r+qV9pze1g4YnhB/X6Y",
+          crossorigin: "anonymous"
+        }
+      ],
+      noscript: [
+        {
+          innerHTML:
+            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.min.css">'
+        }
       ]
     };
   },
