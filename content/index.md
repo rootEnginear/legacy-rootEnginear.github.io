@@ -7,14 +7,14 @@ description: "Keep coding and seeking new possibilities."
 ## Technology Skills
 
 <div class="columns"><div class="column col-6">
-<p t><E>🔥</E> Proficient in:</p>
+<p t>🔥 Proficient in:</p>
 
 - HTML & CSS
 - JavaScript
 - Vue.js: CLI, Router, Vuex, Nuxt
 
 </div><div class="column col-6">
-<p t><E>👍</E> Experienced with:</p>
+<p t>👍 Experienced with:</p>
 
 - SCSS/SASS
 - Firebase
@@ -22,7 +22,7 @@ description: "Keep coding and seeking new possibilities."
 - UI/UX Designing
 
 </div><div class="column col-6">
-<p t><E>👌</E> Familiar with:</p>
+<p t>👌 Familiar with:</p>
 
 - Git
 - TypeScript
@@ -32,7 +32,7 @@ description: "Keep coding and seeking new possibilities."
   - Socket.IO
 
 </div><div class="column col-6">
-<p t><E>🤿</E> Other interests:</p>
+<p t>🤿 Other interests:</p>
 
 - Mobile Application Development
 - Artificial Intelligences (Natural Language Processing)
