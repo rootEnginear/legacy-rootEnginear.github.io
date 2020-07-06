@@ -14,6 +14,15 @@
       :style="picture_style"
       :class="imgClass"
     />
+    <noscript inline-template>
+      <img
+        v-if="images_length"
+        :src="import_images[images_length - 1].src"
+        :alt="alt || 'This picture has no alternative text.'"
+        :style="picture_style"
+        :class="imgClass"
+      />
+    </noscript>
   </picture>
 </template>
 
