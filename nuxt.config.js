@@ -147,9 +147,9 @@ export default {
         "remark-slug",
         "remark-external-links",
         "remark-math",
-        "remark-sub-super",
         "remark-unwrap-images",
-        "remark-attr"
+        "remark-attr",
+        "~/plugins/remark-sub-super-modified.js"
       ],
       rehypePlugins: ["rehype-katex"]
     }
