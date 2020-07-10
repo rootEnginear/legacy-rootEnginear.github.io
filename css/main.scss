@@ -75,10 +75,6 @@ pre > code {
   display: none;
 }
 
-.main-navigation > a {
-  margin-left: 0.4rem;
-}
-
 .nuxt-content {
   p[t] {
     font-weight: 700;
@@ -87,12 +83,18 @@ pre > code {
   p[m0] {
     margin: 0;
   }
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
 }
 
-.emoji {
-  width: 1rem;
-  position: relative;
-  top: 0.25rem;
+@media (min-width: 841px) {
+  .toc-sticky {
+    position: sticky;
+    top: 0.4rem;
+  }
 }
 
 .menu .menu-item > a.indent::before {

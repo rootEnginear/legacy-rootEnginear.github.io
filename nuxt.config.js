@@ -147,7 +147,6 @@ export default {
         "remark-slug",
         "remark-external-links",
         "remark-math",
-        "remark-unwrap-images",
         "remark-attr",
         "~/plugins/remark-sub-super-modified.js"
       ],

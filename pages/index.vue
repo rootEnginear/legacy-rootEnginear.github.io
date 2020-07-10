@@ -92,12 +92,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-@media (min-width: 841px) {
-  .toc-sticky {
-    position: sticky;
-    top: 0.4rem;
-  }
-}
-</style>
