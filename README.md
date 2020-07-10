@@ -1,20 +1,45 @@
-# rootenginear
+# Suthep Chanchuphol
 
-## Build Setup
+> Frontend Developer
 
-```bash
-# install dependencies
-$ yarn install
+Good to see you! I'm 3rd year computer-engineering student at King Mongkut's University of Technology Thonburi (KMUTT) who love coding and seeking new possibilities 👨‍💻.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Technology Skills
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+**🔥 Proficient in:**
 
-# generate static project
-$ yarn generate
-```
+- HTML & CSS
+- JavaScript
+- Vue.js: CLI, Router, Vuex, Nuxt
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+**👍 Experienced with:**
+
+- SCSS/SASS
+- Firebase
+- SQL, RDBMS (MySQL, MariaDB)
+- UI/UX Designing
+
+**👌 Familiar with:**
+
+- Git
+- TypeScript
+- React.js
+- Node.js
+  - Express (RESTfulAPI)
+  - Socket.IO
+
+**🤿 Other interests:**
+
+- Mobile Application Development
+- Artificial Intelligences (Natural Language Processing)
+- Processing Technology (Quantum Computing)
+
+## Education
+
+- **King Mongkut's University of Technology Thonburi**  
+  Studying bachelor's degree (3^rd^ year).  
+  Majoring in Computer Engineering.  
+  Current GPAX: 3.15
+- **Benchamaratrungsarit School**  
+  Studying Intensive English Program (IEP).  
+  GPAX: 3.76

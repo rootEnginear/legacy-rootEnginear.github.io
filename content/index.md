@@ -36,7 +36,7 @@ description: "Keep coding and seeking new possibilities."
 
 - Mobile Application Development
 - Artificial Intelligences (Natural Language Processing)
-- Processing Technology (Quantum Computer)
+- Processing Technology (Quantum Computing)
 
 </div></div>
 
