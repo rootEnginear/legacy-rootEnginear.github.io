@@ -12,7 +12,7 @@ profileImages:
 
 > Frontend Developer
 
-Good to see you! Apart from my name, you can called me Mumú. I'm 3^rd^ year computer-engineering student at KMUTT. Love coding and seeking new possibilities.
+Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's University of Technology Thonburi (KMUTT) who love coding and seeking new possibilities 👨‍💻.
 
 <table>
   <tbody>
