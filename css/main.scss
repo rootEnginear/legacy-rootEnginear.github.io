@@ -37,6 +37,16 @@ hr {
   margin: 0.8rem 0;
 }
 
+mark {
+  background: #ffe9b380;
+  border-bottom: none;
+}
+
+p + ol,
+p + ul {
+  margin-top: -0.8rem; // -1.2 + 0.4
+}
+
 ol,
 ul {
   margin: 0 0 0.8rem 1rem;
@@ -71,23 +81,14 @@ pre > code {
   padding: initial;
 }
 
-.divider > span {
-  display: none;
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
-.nuxt-content {
-  p[t] {
-    font-weight: 700;
-    margin: 0;
-  }
-  p[m0] {
-    margin: 0;
-  }
-  img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-  }
+.divider > span {
+  display: none;
 }
 
 @media (min-width: 841px) {
