@@ -3,7 +3,7 @@
     <h1>Blog</h1>
     <div v-if="docs.length" class="columns">
       <div
-        v-for="doc in docs"
+        v-for="(doc, i) in docs"
         :key="doc.slug"
         class="column col-xs-12 col-md-6 col-lg-4 col-3 pb-2 d-flex"
       >
@@ -13,18 +13,20 @@
           style="text-decoration:none;flex:1 1 0"
         >
           <div class="card c-hand" style="width:100%">
-            <div class="card-image">
+            <div class="card-image" style="position:relative">
               <!-- picture max dimension: 404px -->
               <m-picture
                 :data-images="[
                   {
-                    src: doc.image || 'no_image.jpg',
+                    src: doc.image || `https://picsum.photos/id/${i}/404`,
+                    href: !doc.image,
                     type: 'image/jpeg'
                   }
                 ]"
                 base-path=""
                 :alt="doc.title"
                 responsive
+                style="position:absolute;top:0"
               />
             </div>
             <div class="card-header">
@@ -85,5 +87,13 @@ export default {
     margin: 0;
     letter-spacing: 1px;
   }
+}
+
+.card-image::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+  width: 100%;
+  background: #bec4d4;
 }
 </style>
