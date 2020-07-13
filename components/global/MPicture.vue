@@ -139,12 +139,10 @@ export default {
   },
   computed: {
     import_images() {
-      return this.dataImages.map(({ src, type }) => {
-        return {
-          src: require(`~/assets/${this.basePath}${src}`),
-          type
-        };
-      });
+      return this.dataImages.map(({ src, href, type }) => ({
+        src: href ? src : require(`~/assets/${this.basePath}${src}`),
+        type
+      }));
     },
     images_length() {
       return this.dataImages.length;
@@ -177,12 +175,12 @@ export default {
         window.requestAnimationFrame(this.updateParallax);
     },
     updateParallax() {
-      let half_window = window.innerHeight / 2;
-      let picture_top_rect =
+      const half_window = window.innerHeight / 2;
+      const picture_top_rect =
         (this.$refs.picture_element &&
           this.$refs.picture_element.getBoundingClientRect().top) ||
         0;
-      let half_picture_height =
+      const half_picture_height =
         ((this.$refs.picture_element &&
           this.$refs.picture_element.clientHeight) ||
           0) / 2;
