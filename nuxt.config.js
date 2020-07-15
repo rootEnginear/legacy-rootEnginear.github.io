@@ -134,7 +134,8 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt/content
-    "@nuxt/content"
+    "@nuxt/content",
+    "@nuxtjs/sitemap"
   ],
   /*
    ** Content module configuration
@@ -151,6 +152,19 @@ export default {
         "~/plugins/remark-sub-super-modified.js"
       ],
       rehypePlugins: ["rehype-katex"]
+    }
+  },
+  sitemap: {
+    hostname: "https://rootenginear.github.io/",
+    exclude: ["/blog"],
+    routes: [
+      { url: "/", changefreq: "daily", priority: 1 },
+      "/blog/mystudy-1-1",
+      "/blog/mystudy-1-2"
+    ],
+    defaults: {
+      changefreq: "monthly",
+      priority: 0.7
     }
   },
   /*
