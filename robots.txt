@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /blog
+Sitemap: https://rootenginear.github.io/sitemap.xml
+Host: https://rootenginear.github.io
