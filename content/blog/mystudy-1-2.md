@@ -1,6 +1,9 @@
 ---
 title: สรุปสิ่งที่ฉันเรียนในมหาลัยฯ (SS1 EP2)
 description: "Statistic for Engineers: Fundamental Counting Principle, Permutation, Combination"
+graph01:
+  - src: "https://mermaid.ink/img/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG4gIGFbXCLguIHguKPguLjguIfguYDguJfguJ7guK9cIl0gJiBhIC0tPiBiW1wi4LiZ4LiE4Lij4Lij4Liy4LiK4Liq4Li14Lih4LiyXCJdXG4gIGIgJiBiICYgYiAmIGIgJiBhICYgYSAmIGEgLS0-IGNbXCLguKvguJnguK3guIfguITguLLguKJcIl1cbiAgIiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9"
+    href: true
 ---
 
 ## กฎการนับเบื้องต้น (Fundamental Counting Principle)
@@ -124,7 +127,8 @@ $$
 
 > **ปัญหา 1:** จากกราฟที่กำหนด
 >
-> ![กราฟทางคณิตศาสตร์ ประกอบไปด้วย 3 Vertices คือ กรุงเทพฯ นครราชสีมา และหนองคาย จากกรุงเทพไปนครราชสีมามี 2 เส้นทาง จากนครราชสีมาไปหนองคายมี 4 เส้นทาง และจากกรุงเทพฯ ไปหนองคายตรงๆ มี 3 เส้นทาง](https://mermaid.ink/img/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG4gIGFbXCLguIHguKPguLjguIfguYDguJfguJ7guK9cIl0gJiBhIC0tPiBiW1wi4LiZ4LiE4Lij4Lij4Liy4LiK4Liq4Li14Lih4LiyXCJdXG4gIGIgJiBiICYgYiAmIGIgJiBhICYgYSAmIGEgLS0-IGNbXCLguKvguJnguK3guIfguITguLLguKJcIl1cbiAgIiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
+> <m-picture :data-images="graph01" alt="กราฟทางคณิตศาสตร์ ประกอบไปด้วย 3 Vertices คือ กรุงเทพฯ นครราชสีมา และหนองคาย จากกรุงเทพไปนครราชสีมามี 2 เส้นทาง จากนครราชสีมาไปหนองคายมี 4 เส้นทาง และจากกรุงเทพฯ ไปหนองคายตรงๆ มี 3 เส้นทาง" responsive use-max-width></m-picture>
+>
 > จะมีเส้นทางจากกรุงเทพฯ ไปหนองคายทั้งหมดกี่เส้นทาง?
 
 จะเห็นว่าข้อนี้เราสามารถแบ่งออกเป็น 2 พาร์ทได้ก็คือ:
