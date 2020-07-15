@@ -124,7 +124,7 @@ $$
 
 > **ปัญหา 1:** จากกราฟที่กำหนด
 >
-> ![กราฟทางคณิตศาสตร์ ประกอบไปด้วย 3 Vertices คือ กรุงเทพฯ นครราชสีมา และหนองคาย จากกรุงเทพไปนครราชสีมามี 2 เส้นทาง จากนครราชสีมาไปหนองคายมี 4 เส้นทาง และจากกรุงเทพฯ ไปหนองคายตรงๆ มี 3 เส้นทาง](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbiAgYVtcIuC4geC4o-C4uOC4h-C5gOC4l-C4nuC4r1wiXSAtLT4gYltcIuC4meC4hOC4o-C4o-C4suC4iuC4quC4teC4oeC4slwiXSAtLT4gY1tcIuC4q-C4meC4reC4h-C4hOC4suC4olwiXVxuICBhIC0tPiBiXG4gIGIgLS0-IGNcbiAgYiAtLT4gY1xuICBiIC0tPiBjXG4gIGEgLS0-IGNcbiAgYSAtLT4gY1xuICBhIC0tPiBjIiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
+> ![กราฟทางคณิตศาสตร์ ประกอบไปด้วย 3 Vertices คือ กรุงเทพฯ นครราชสีมา และหนองคาย จากกรุงเทพไปนครราชสีมามี 2 เส้นทาง จากนครราชสีมาไปหนองคายมี 4 เส้นทาง และจากกรุงเทพฯ ไปหนองคายตรงๆ มี 3 เส้นทาง](https://mermaid.ink/img/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG4gIGFbXCLguIHguKPguLjguIfguYDguJfguJ7guK9cIl0gJiBhIC0tPiBiW1wi4LiZ4LiE4Lij4Lij4Liy4LiK4Liq4Li14Lih4LiyXCJdXG4gIGIgJiBiICYgYiAmIGIgJiBhICYgYSAmIGEgLS0-IGNbXCLguKvguJnguK3guIfguITguLLguKJcIl1cbiAgIiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 > จะมีเส้นทางจากกรุงเทพฯ ไปหนองคายทั้งหมดกี่เส้นทาง?
 
 จะเห็นว่าข้อนี้เราสามารถแบ่งออกเป็น 2 พาร์ทได้ก็คือ:
