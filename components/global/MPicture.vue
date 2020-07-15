@@ -70,7 +70,9 @@ export default {
     basePath: {
       type: String,
       default: "blog/"
-    }
+    },
+    // use max width
+    useMaxWidth: Boolean
   },
   mounted() {
     // Lazy Load
@@ -156,6 +158,7 @@ export default {
       return `${this.placeholder_height};
       ${this.block ? "display:block" : ""};
       object-fit:${this.fit};
+      ${this.useMaxWidth ? "margin:auto;max-" : ""}
       ${this.responsive ? "width:100%;height:auto;display:block" : ""};
       ${
         this.parallax
