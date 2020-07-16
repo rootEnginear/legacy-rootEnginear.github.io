@@ -32,7 +32,7 @@ description: "Keep coding and seeking new possibilities."
   - Socket.IO
 
 </div><div class="column col-6">
-<p t>🤿 Other interests:</p>
+<p t>🤸‍♂️ Other interests:</p>
 
 - Mobile Application Development
 - Artificial Intelligences (Natural Language Processing)
