@@ -35,6 +35,12 @@
             <div v-if="doc.description" class="card-body">
               {{ doc.description }}
             </div>
+            <div
+              class="card-footer text-right"
+              style="font-size:80%;padding-top:.4rem"
+            >
+              {{ doc.createdAt | formatDate }} 📅
+            </div>
           </div>
         </nuxt-link>
       </div>
@@ -50,7 +56,10 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const docs = await $content("blog").fetch();
+    const docs = await $content("blog")
+      .only(["slug", "path", "image", "title", "description", "createdAt"])
+      .sortBy("createdAt", "desc")
+      .fetch();
     return { docs };
   },
   head() {
@@ -68,6 +77,17 @@ export default {
   methods: {
     gotoArticle(path) {
       this.$router.push(path);
+    }
+  },
+  filters: {
+    formatDate(value) {
+      return Intl.DateTimeFormat("en-GB", {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric"
+      }).format(new Date(value));
     }
   }
 };
