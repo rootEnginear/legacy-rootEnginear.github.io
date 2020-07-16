@@ -37,7 +37,7 @@ Good to see you! I'm 3rd year computer-engineering student at King Mongkut's Uni
 ## Education
 
 - **King Mongkut's University of Technology Thonburi**  
-  Studying bachelor's degree (3^rd^ year).  
+  Studying bachelor's degree (3rd year).  
   Majoring in Computer Engineering.  
   Current GPAX: 3.15
 - **Benchamaratrungsarit School**  

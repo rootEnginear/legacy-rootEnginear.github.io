@@ -18,13 +18,13 @@ Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's U
   <tbody>
     <tr>
       <td class="text-center">
-        <i class="fas fa-map"></i>
+        🗺&#xFE0F;
       </td>
       <td class="pl-1">Bangkok, Thailand.</td>
     </tr>
     <tr>
-      <td class="text-center">
-        <i class="fab fa-facebook"></i>
+      <td>
+        <m-picture :data-images="[{src:'facebook.svg',type:'image/svg+xml'}]" alt="Facebook" base-path="" block img-style="width:.9rem;margin:auto"></m-picture>
       </td>
       <td class="pl-1">
         <a href="https://fb.me/mumu.universe"
@@ -34,8 +34,8 @@ Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's U
       </td>
     </tr>
     <tr>
-      <td class="text-center">
-        <i class="fab fa-github"></i>
+      <td>
+        <m-picture :data-images="[{src:'github.svg',type:'image/svg+xml'}]" alt="GitHub" base-path="" block img-style="width:.9rem;margin:auto"></m-picture>
       </td>
       <td class="pl-1">
         <a href="https://github.com/rootEnginear"
