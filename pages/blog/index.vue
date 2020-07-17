@@ -18,7 +18,9 @@
               <m-picture
                 :data-images="[
                   {
-                    src: doc.image || `https://picsum.photos/id/${i}/404`,
+                    src:
+                      doc.image ||
+                      `https://picsum.photos/id/${docs_length - i - 1}/404`,
                     href: !doc.image,
                     type: 'image/jpeg'
                   }
@@ -73,6 +75,11 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    docs_length() {
+      return (this.docs || []).length;
+    }
   },
   methods: {
     gotoArticle(path) {
