@@ -117,6 +117,7 @@ export default {
     &::before {
       content: "กลับด้านบน";
       margin-right: 0.5rem;
+      display: block;
     }
 
     &::after {
