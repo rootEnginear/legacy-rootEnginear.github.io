@@ -160,7 +160,8 @@ export default {
     routes: [
       { url: "/", changefreq: "daily", priority: 1 },
       "/blog/mystudy-1-1",
-      "/blog/mystudy-1-2"
+      "/blog/mystudy-1-2",
+      "/blog/mystudy-1-3"
     ],
     defaults: {
       changefreq: "monthly",
