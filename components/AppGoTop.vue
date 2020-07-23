@@ -7,10 +7,10 @@
 <script>
 function debounce(func, wait, immediate) {
   var timeout;
-  return function() {
+  return function () {
     var context = this,
       args = arguments;
-    var later = function() {
+    var later = function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       scroll_top_enabled: false,
-      goTopHandler: null
+      goTopHandler: null,
     };
   },
   methods: {
@@ -48,13 +48,13 @@ export default {
     },
     goTop() {
       window.scrollTo(0, 0);
-    }
+    },
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.goTopHandler);
     window.removeEventListener("resize", this.goTopHandler);
     window.removeEventListener("orientationchange", this.goTopHandler);
-  }
+  },
 };
 </script>
 
@@ -117,7 +117,7 @@ export default {
     &::before {
       content: "กลับด้านบน";
       margin-right: 0.5rem;
-      display: block;
+      white-space: nowrap;
     }
 
     &::after {
