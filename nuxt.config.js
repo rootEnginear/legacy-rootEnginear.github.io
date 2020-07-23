@@ -39,11 +39,6 @@ export default {
         href: "https://cdn.jsdelivr.net"
       },
       {
-        rel: "stylesheet",
-        href:
-          "https://cdn.jsdelivr.net/gh/picturepan2/spectre/dist/spectre.min.css"
-      },
-      {
         rel: "preload",
         as: "style",
         href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",

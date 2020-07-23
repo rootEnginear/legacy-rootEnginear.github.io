@@ -17,7 +17,8 @@
     "rehype-katex": "^3.0.0",
     "remark-attr": "^0.11.1",
     "remark-math": "^2.0.1",
-    "remark-unwrap-images": "^2.0.0"
+    "remark-unwrap-images": "^2.0.0",
+    "spectre.css": "^0.5.9"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

@@ -6,7 +6,7 @@ profileImages:
     type: "image/jpeg"
 ---
 
-<div class="columns"><div class="column col-xs-12 col-md-7 col-lg-8 col-9">
+<div class="cols"><div class="col- col-xs-12 col-md-7 col-lg-8 col-9">
 
 # Suthep Chanchuphol
 
@@ -47,7 +47,7 @@ Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's U
   </tbody>
 </table>
 
-</div><div class="column col-xs-12 col-md-5 col-lg-4 col-3" style="display:flex;align-items:center">
+</div><div class="col- col-xs-12 col-md-5 col-lg-4 col-3 d-flex" style="align-items:center">
 
 <m-picture :data-images="profileImages" alt="Suthep Chanchuphol" base-path="" responsive img-class="s-circle"></m-picture>
 

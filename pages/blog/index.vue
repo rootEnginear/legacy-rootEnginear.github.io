@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>Blog</h1>
-    <div v-if="docs.length" class="columns">
+    <div v-if="docs.length" class="cols">
       <div
         v-for="(doc, i) in docs"
         :key="doc.slug"
-        class="column col-xs-12 col-md-6 col-lg-4 col-3 pb-2 d-flex"
+        class="col- col-xs-12 col-md-6 col-lg-4 col-3 pb-2 d-flex"
       >
         <nuxt-link
           :to="doc.path"

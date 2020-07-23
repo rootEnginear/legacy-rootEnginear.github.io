@@ -6,8 +6,8 @@
       <nuxt-content v-if="header" :document="header" />
     </header>
     <hr v-if="header" />
-    <section class="columns">
-      <aside v-if="doc.toc.length" class="column col-3 col-md-12">
+    <section class="cols">
+      <aside v-if="doc.toc.length" class="col- col-3 col-md-12">
         <ul class="menu toc-sticky">
           <li class="divider" data-content="TABLE OF CONTENTS">
             <span>Table of contents</span>
@@ -22,7 +22,7 @@
         </ul>
         <br />
       </aside>
-      <main :class="{ column: 1, 'col-9': doc.toc.length, 'col-md-12': 1 }">
+      <main :class="{ 'col- col-md-12': 1, 'col-9': doc.toc.length }">
         <nuxt-content :document="doc" />
       </main>
     </section>

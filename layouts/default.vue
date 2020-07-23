@@ -20,7 +20,7 @@ export default {
   components: {
     AppNavbar,
     AppGoTop,
-    AppFooter
-  }
+    AppFooter,
+  },
 };
 </script>

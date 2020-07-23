@@ -6,14 +6,14 @@ description: "Keep coding and seeking new possibilities."
 
 ## Technology Skills
 
-<div class="columns"><div class="column col-6">
+<div class="cols"><div class="col- col-6">
 <p t>🔥 Proficient in:</p>
 
 - HTML & CSS
 - JavaScript
 - Vue.js: CLI, Router, Vuex, Nuxt
 
-</div><div class="column col-6">
+</div><div class="col- col-6">
 <p t>👍 Experienced with:</p>
 
 - SCSS/SASS
@@ -21,7 +21,7 @@ description: "Keep coding and seeking new possibilities."
 - SQL, RDBMS (MySQL, MariaDB)
 - UI/UX Designing
 
-</div><div class="column col-6">
+</div><div class="col- col-6">
 <p t>👌 Familiar with:</p>
 
 - Git
@@ -31,7 +31,7 @@ description: "Keep coding and seeking new possibilities."
   - Express (RESTfulAPI)
   - Socket.IO
 
-</div><div class="column col-6">
+</div><div class="col- col-6">
 <p t>🤸‍♂️ Other interests:</p>
 
 - Mobile Application Development
