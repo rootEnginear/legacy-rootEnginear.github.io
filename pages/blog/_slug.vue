@@ -6,7 +6,7 @@
       <nuxt-content v-if="header" :document="header" />
     </header>
     <hr v-if="header" />
-    <div class="columns">
+    <section class="columns">
       <aside v-if="doc.toc.length" class="column col-3 col-md-12">
         <ul class="menu toc-sticky">
           <li class="divider" data-content="TABLE OF CONTENTS">
@@ -25,7 +25,21 @@
       <main :class="{ column: 1, 'col-9': doc.toc.length, 'col-md-12': 1 }">
         <nuxt-content :document="doc" />
       </main>
-    </div>
+    </section>
+    <ul class="pagination">
+      <li class="page-item page-prev">
+        <nuxt-link v-if="prev" :to="prev.slug">
+          <div class="page-item-subtitle">&leftarrow; บทความถัดไป</div>
+          <div class="page-item-title h5">{{ prev.title }}</div>
+        </nuxt-link>
+      </li>
+      <li class="page-item page-next">
+        <nuxt-link v-if="next" :to="next.slug">
+          <div class="page-item-subtitle">บทความก่อนหน้า &rightarrow;</div>
+          <div class="page-item-title h5">{{ next.title }}</div>
+        </nuxt-link>
+      </li>
+    </ul>
   </article>
 </template>
 
@@ -42,7 +56,12 @@ export default {
       ).fetch();
     } catch (e) {}
     const doc = await $content(CONTENT_PATH, params.slug || "../index").fetch();
-    return { doc, header };
+    const [prev, next] = await $content("blog")
+      .only(["title", "slug"])
+      .sortBy("dateWritten", "desc")
+      .surround(params.slug)
+      .fetch();
+    return { doc, header, prev, next };
   },
   head() {
     return {
