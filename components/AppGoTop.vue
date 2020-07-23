@@ -118,6 +118,7 @@ export default {
       content: "กลับด้านบน";
       margin-right: 0.5rem;
       white-space: nowrap;
+      display: block;
     }
 
     &::after {
