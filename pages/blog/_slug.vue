@@ -47,7 +47,7 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        lang: this.doc.lang || NUXT_CONFIG.head.htmlAttrs.lang
+        lang: this.doc.lang || NUXT_CONFIG.head.htmlAttrs.lang,
       },
       title: this.doc.title || NUXT_CONFIG.head.title,
       meta: [
@@ -56,9 +56,9 @@ export default {
           name: "description",
           content:
             this.doc.description ||
-            this.doc.title + " - All about @rootEnginear"
-        }
-      ]
+            this.doc.title + " - All about @rootEnginear",
+        },
+      ],
     };
   },
   methods: {
@@ -69,7 +69,7 @@ export default {
           window.scrollY -
           16
       );
-    }
-  }
+    },
+  },
 };
 </script>

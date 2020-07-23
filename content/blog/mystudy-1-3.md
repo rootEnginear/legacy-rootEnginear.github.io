@@ -1,6 +1,7 @@
 ---
 title: สรุปสิ่งที่ฉันเรียนในมหาลัยฯ (SS1 EP3)
 description: "Statistic for Engineers: Definition, properties and rules of probability"
+dateWritten: "2020-07-21"
 ---
 
 ## ความน่าจะเป็น คือ? (Definition of Probability)

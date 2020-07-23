@@ -10,10 +10,10 @@
         <nuxt-link
           :to="doc.path"
           class="text-dark d-flex"
-          style="text-decoration:none;flex:1 1 0"
+          style="text-decoration: none; flex: 1 1 0;"
         >
-          <div class="card c-hand" style="width:100%">
-            <div class="card-image" style="position:relative">
+          <div class="card c-hand" style="width: 100%;">
+            <div class="card-image" style="position: relative;">
               <!-- picture max dimension: 404px -->
               <m-picture
                 :data-images="[
@@ -22,13 +22,13 @@
                       doc.image ||
                       `https://picsum.photos/id/${docs_length - i - 1}/404`,
                     href: !doc.image,
-                    type: 'image/jpeg'
-                  }
+                    type: 'image/jpeg',
+                  },
                 ]"
                 base-path=""
                 :alt="doc.title"
                 responsive
-                style="position:absolute;top:0"
+                style="position: absolute; top: 0;"
               />
             </div>
             <div class="card-header">
@@ -39,9 +39,9 @@
             </div>
             <div
               class="card-footer text-right"
-              style="font-size:80%;padding-top:.4rem"
+              style="font-size: 80%; padding-top: 0.4rem;"
             >
-              {{ doc.createdAt | formatDate }} 📅
+              {{ doc.dateWritten | formatDate }} 📅
             </div>
           </div>
         </nuxt-link>
@@ -59,8 +59,8 @@
 export default {
   async asyncData({ $content, params }) {
     const docs = await $content("blog")
-      .only(["slug", "path", "image", "title", "description", "createdAt"])
-      .sortBy("createdAt", "desc")
+      .only(["slug", "path", "image", "title", "description", "dateWritten"])
+      .sortBy("dateWritten", "desc")
       .fetch();
     return { docs };
   },
@@ -71,32 +71,31 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Blog of @rootEnginear"
-        }
-      ]
+          content: "Blog of @rootEnginear",
+        },
+      ],
     };
   },
   computed: {
     docs_length() {
       return (this.docs || []).length;
-    }
+    },
   },
   methods: {
     gotoArticle(path) {
       this.$router.push(path);
-    }
+    },
   },
   filters: {
     formatDate(value) {
+      console.log(value);
       return Intl.DateTimeFormat("en-GB", {
         year: "numeric",
         month: "numeric",
         day: "numeric",
-        hour: "numeric",
-        minute: "numeric"
       }).format(new Date(value));
-    }
-  }
+    },
+  },
 };
 </script>
 

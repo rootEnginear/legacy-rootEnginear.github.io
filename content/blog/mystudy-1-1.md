@@ -1,6 +1,7 @@
 ---
 title: สรุปสิ่งที่ฉันเรียนในมหาลัยฯ (SS1 EP1)
 description: "Statistic for Engineers: Experiment, Sample Space, Event"
+dateWritten: "2020-07-04"
 ---
 
 ## การทดลอง (Experiment)

@@ -39,16 +39,16 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        lang: this.doc.lang || NUXT_CONFIG.head.htmlAttrs.lang
+        lang: this.doc.lang || NUXT_CONFIG.head.htmlAttrs.lang,
       },
       title: this.doc.title || NUXT_CONFIG.head.title,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: this.doc.description || NUXT_CONFIG.head.meta[2].content
-        }
-      ]
+          content: this.doc.description || NUXT_CONFIG.head.meta[2].content,
+        },
+      ],
     };
   },
   methods: {
@@ -59,7 +59,7 @@ export default {
           window.scrollY -
           16
       );
-    }
-  }
+    },
+  },
 };
 </script>
