@@ -5,12 +5,17 @@ html {
 body {
   margin: 32px 6%;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   font-family: "IBM Plex Sans", "IBM Plex Sans Thai Looped", sans-serif;
   line-height: 1.7;
   letter-spacing: 0.3px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
 }
 
 h1,
