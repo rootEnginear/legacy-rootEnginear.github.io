@@ -1,6 +1,7 @@
-<template>
+<template functional>
   <footer>
-    Copyright &copy; {{ current_year }} Suthep Chanchuphol All right reserved.
+    Copyright &copy; {{ new Date().getFullYear() }} Suthep Chanchuphol All right
+    reserved.
     <br />
     <small
       >Also, check out this awesome CSS framework &ndash;
@@ -17,10 +18,5 @@
 <script>
 export default {
   name: "AppFooter",
-  data() {
-    return {
-      current_year: new Date().getFullYear()
-    };
-  }
 };
 </script>
