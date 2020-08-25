@@ -9,10 +9,12 @@
     <img
       ref="img_element"
       v-if="images_length"
+      src="~/assets/blank.png"
       :data-src="import_images[images_length - 1].src"
       :alt="alt || 'This picture has no alternative text.'"
       :style="picture_style"
       :class="imgClass"
+      loading="lazy"
     />
     <noscript inline-template>
       <img
@@ -33,34 +35,34 @@ export default {
     // data-images
     dataImages: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
     // alt
     alt: {
       type: String,
-      required: true
+      required: true,
     },
     // fit
     fit: {
       type: String,
-      default: "initial"
+      default: "initial",
     },
     // img-style
     imgStyle: {
       type: String,
-      default: ""
+      default: "",
     },
     // img-class
     imgClass: {
       type: String,
-      default: ""
+      default: "",
     },
     // responsive
     responsive: Boolean,
     // placeholder-height
     placeholderHeight: {
       type: String,
-      default: "auto"
+      default: "auto",
     },
     // block
     block: Boolean,
@@ -69,55 +71,62 @@ export default {
     // base route
     basePath: {
       type: String,
-      default: "blog/"
+      default: "blog/",
     },
     // use max width
-    useMaxWidth: Boolean
+    useMaxWidth: Boolean,
   },
   mounted() {
     // Lazy Load
-    if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            this.image_intersected = true;
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImageObserver.unobserve(lazyImage);
-          }
-        });
-      });
-
-      lazyImageObserver.observe(this.$refs.img_element);
+    if ("loading" in HTMLImageElement.prototype) {
+      /* Native lazy loading is supported */
+      this.$refs.img_element.src = this.$refs.img_element.dataset.src;
+      this.image_intersected = true;
     } else {
-      let active = false;
-
-      const lazyLoad = () => {
-        if (active === false) {
-          active = true;
-
-          setTimeout(() => {
-            let lazyImage = this.$refs.img_element;
-            if (
-              lazyImage.getBoundingClientRect().top <= window.innerHeight &&
-              lazyImage.getBoundingClientRect().bottom >= 0 &&
-              getComputedStyle(lazyImage).display !== "none"
-            ) {
+      /* Native lazy loading is not supported */
+      if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              let lazyImage = entry.target;
               this.image_intersected = true;
               lazyImage.src = lazyImage.dataset.src;
-              document.removeEventListener("scroll", lazyLoad);
-              window.removeEventListener("resize", lazyLoad);
-              window.removeEventListener("orientationchange", lazyLoad);
+              lazyImageObserver.unobserve(lazyImage);
             }
+          });
+        });
 
-            active = false;
-          }, 200);
-        }
-      };
+        lazyImageObserver.observe(this.$refs.img_element);
+      } else {
+        let active = false;
 
-      document.addEventListener("scroll", lazyLoad);
-      window.addEventListener("resize", lazyLoad);
-      window.addEventListener("orientationchange", lazyLoad);
+        const lazyLoad = () => {
+          if (active === false) {
+            active = true;
+
+            setTimeout(() => {
+              let lazyImage = this.$refs.img_element;
+              if (
+                lazyImage.getBoundingClientRect().top <= window.innerHeight &&
+                lazyImage.getBoundingClientRect().bottom >= 0 &&
+                getComputedStyle(lazyImage).display !== "none"
+              ) {
+                this.image_intersected = true;
+                lazyImage.src = lazyImage.dataset.src;
+                document.removeEventListener("scroll", lazyLoad);
+                window.removeEventListener("resize", lazyLoad);
+                window.removeEventListener("orientationchange", lazyLoad);
+              }
+
+              active = false;
+            }, 200);
+          }
+        };
+
+        document.addEventListener("scroll", lazyLoad);
+        window.addEventListener("resize", lazyLoad);
+        window.addEventListener("orientationchange", lazyLoad);
+      }
     }
     // Parallax
     if (this.parallax) {
@@ -136,14 +145,14 @@ export default {
   data() {
     return {
       image_intersected: false,
-      parallax_offset: 0
+      parallax_offset: 0,
     };
   },
   computed: {
     import_images() {
       return this.dataImages.map(({ src, href, type }) => ({
         src: href ? src : require(`~/assets/${this.basePath}${src}`),
-        type
+        type,
       }));
     },
     images_length() {
@@ -166,7 +175,7 @@ export default {
           : ""
       };
       ${this.imgStyle}`;
-    }
+    },
   },
   methods: {
     useParallax() {
@@ -191,7 +200,7 @@ export default {
         0 -
         (half_window - picture_top_rect + half_picture_height) / 2
       ).toFixed(2);
-    }
-  }
+    },
+  },
 };
 </script>
