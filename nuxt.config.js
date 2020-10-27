@@ -160,8 +160,7 @@ export default {
     }
   },
   "google-gtag": {
-    id: "G-F2N4EGMQ22",
-    debug: true
+    id: "G-F2N4EGMQ22"
   },
   /*
    ** Build configuration
