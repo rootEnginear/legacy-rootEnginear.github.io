@@ -1,5 +1,5 @@
 <template functional>
-  <footer>
+  <footer class="no-print">
     Copyright &copy; {{ new Date().getFullYear() }} Suthep Chanchuphol All right
     reserved.
     <br />

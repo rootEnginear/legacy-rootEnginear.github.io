@@ -4,6 +4,8 @@ profileImages:
     type: "image/webp"
   - src: "profile.jpg"
     type: "image/jpeg"
+tel: "Double click to show"
+email: "Double click to show"
 ---
 
 <div class="cols"><div class="col- col-xs-12 col-md-7 col-lg-8 col-9">
@@ -12,29 +14,34 @@ profileImages:
 
 > Frontend Developer
 
-Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's University of Technology Thonburi (KMUTT) who love coding and seeking new possibilities 👨‍💻.
+Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's University of Technology Thonburi (KMUTT) who love coding and seeking new possibilities. 👨‍💻
 
 <table>
   <tbody>
     <tr>
-      <td class="text-center">
+      <td class="text-center" aria-hidden="true">
         🗺&#xFE0F;
       </td>
       <td class="pl-1">Bangkok, Thailand.</td>
     </tr>
     <tr>
-      <td>
-        <m-picture :data-images="[{src:'facebook.svg',type:'image/svg+xml'}]" alt="Facebook" base-path="" block img-style="width:.9rem;margin:auto"></m-picture>
+      <td class="text-center" aria-hidden="true">
+        📞&#xFE0F;
       </td>
       <td class="pl-1">
-        <a href="https://fb.me/mumu.universe"
-          rel="nofollow,noopener,noreferrer"
-          target="_blank"
-        >https://fb.me/mumu.universe</a>
+        <app-hidden data="(+66) 868 343 127"></app-hidden>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="text-center" aria-hidden="true">
+        📧&#xFE0F;
+      </td>
+      <td class="pl-1">
+        <app-hidden data="suthep.chanchuphol(at)outlook.com"></app-hidden>
+      </td>
+    </tr>
+    <tr>
+      <td aria-hidden="true">
         <m-picture :data-images="[{src:'github.svg',type:'image/svg+xml'}]" alt="GitHub" base-path="" block img-style="width:.9rem;margin:auto"></m-picture>
       </td>
       <td class="pl-1">

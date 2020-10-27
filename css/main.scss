@@ -45,13 +45,16 @@ hr {
 }
 
 mark {
-  background: #ffe9b380;
   border-bottom: none;
 }
 
 p + ol,
 p + ul {
   margin-top: -0.8rem; // -1.2 + 0.4
+}
+
+li > p {
+  margin: 0;
 }
 
 ol,
@@ -64,10 +67,13 @@ a {
   cursor: pointer;
 
   &:visited {
-    color: #5755d9;
+    color: $link-color;
 
-    &:hover {
-      color: #302ecd;
+    &:focus,
+    &:hover,
+    &:active {
+      color: $link-color-dark;
+      text-decoration: underline;
     }
   }
 }
@@ -90,6 +96,10 @@ pre > code {
 
 .divider > span {
   display: none;
+}
+
+.label {
+  margin-left: 0.5ch;
 }
 
 @media (min-width: 841px) {
@@ -116,4 +126,23 @@ pre > code {
 .page-leave-to {
   opacity: 0;
   transform: translateX(-10%);
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+.no-br {
+  white-space: nowrap;
+}
+
+.small {
+  font-size: 0.9em;
 }

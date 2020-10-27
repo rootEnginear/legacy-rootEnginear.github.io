@@ -1,5 +1,8 @@
 // Class locations: ./pages, ./content, ./layouts
 
+// Color customization
+@import "variables";
+
 // Variables and mixins
 @import "~spectre.css/src/_variables";
 @import "~spectre.css/src/_mixins";
@@ -15,7 +18,7 @@
 // @import "~spectre.css/src/_tables";
 // @import "~spectre.css/src/_buttons";
 // @import "~spectre.css/src/_forms";
-// @import "~spectre.css/src/_labels";
+@import "~spectre.css/src/_labels";
 // @import "~spectre.css/src/_codes";
 // @import "~spectre.css/src/_media";
 

@@ -1,10 +1,5 @@
 export default {
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: "universal",
-  /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
@@ -123,7 +118,14 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "G-F2N4EGMQ22"
+      }
+    ]
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -137,6 +139,7 @@ export default {
    ** See https://content.nuxtjs.org/configuration
    */
   content: {
+    liveEdit: false,
     markdown: {
       remarkPlugins: () => [
         "remark-squeeze-paragraphs",

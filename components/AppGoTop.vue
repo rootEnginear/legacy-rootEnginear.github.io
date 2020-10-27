@@ -59,6 +59,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../css/_variables";
+
 .gotop-button {
   box-sizing: border-box;
   position: fixed;
@@ -68,7 +70,7 @@ export default {
   height: 40px;
 
   background: #fffc;
-  border: 0.05rem solid #5755d9;
+  border: 0.05rem solid $primary-color;
   border-radius: 0.1rem;
   cursor: pointer;
   user-select: none;
@@ -85,8 +87,8 @@ export default {
     height: 10px;
     display: inline-block;
     content: "";
-    border-top: 3px solid #5755d9;
-    border-left: 3px solid #5755d9;
+    border-top: 3px solid $primary-color;
+    border-left: 3px solid $primary-color;
     position: relative;
     top: 3.5px;
     transition: border-color cubic-bezier(0, 0, 0.2, 1) 0.075s;
@@ -94,7 +96,7 @@ export default {
   }
 
   &:hover {
-    background: #5755d9;
+    background: $primary-color;
     transition: background cubic-bezier(0.4, 0, 1, 1) 0.1s;
 
     &::after {

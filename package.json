@@ -21,6 +21,7 @@
     "spectre.css": "^0.5.9"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.1"
   }

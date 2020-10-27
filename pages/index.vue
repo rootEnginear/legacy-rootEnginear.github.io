@@ -5,7 +5,7 @@
     </header>
     <hr v-if="header" />
     <div class="cols">
-      <aside v-if="doc.toc.length" class="col- col-3 col-md-12">
+      <aside v-if="doc.toc.length" class="col- col-3 col-md-12 no-print">
         <ul class="menu toc-sticky">
           <li class="divider" data-content="TABLE OF CONTENTS">
             <span>Table of contents</span>
@@ -28,9 +28,15 @@
 </template>
 
 <script>
+import AppHidden from "@/components/AppHidden";
+import AppExternalLink from "@/components/AppExternalLink";
 import NUXT_CONFIG from "~/nuxt.config";
 
 export default {
+  components: {
+    AppHidden,
+    AppExternalLink,
+  },
   async asyncData({ $content, params }) {
     const doc = await $content("index").fetch();
     const header = await $content("header/index").fetch();

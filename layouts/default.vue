@@ -1,11 +1,11 @@
 <template>
   <div class="container grid-lg">
-    <app-navbar />
-    <hr class="mb-2" />
+    <app-navbar class="no-print" />
+    <hr class="mb-2 no-print" />
     <nuxt />
-    <hr class="mt-2" />
+    <hr class="mt-2 no-print" />
     <client-only>
-      <app-go-top />
+      <app-go-top class="no-print" />
     </client-only>
     <app-footer />
   </div>
