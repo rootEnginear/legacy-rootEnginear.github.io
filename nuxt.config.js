@@ -118,14 +118,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    [
-      "@nuxtjs/google-analytics",
-      {
-        id: "G-F2N4EGMQ22"
-      }
-    ]
-  ],
+  buildModules: ["@nuxtjs/google-gtag"],
   /*
    ** Nuxt.js modules
    */
@@ -165,6 +158,10 @@ export default {
       changefreq: "monthly",
       priority: 0.7
     }
+  },
+  "google-gtag": {
+    id: "G-F2N4EGMQ22",
+    debug: true
   },
   /*
    ** Build configuration
