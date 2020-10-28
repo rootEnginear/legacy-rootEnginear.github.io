@@ -9,7 +9,11 @@
     <section class="cols">
       <aside v-if="doc.toc.length" class="col- col-3 col-md-12">
         <ul class="menu toc-sticky">
-          <li class="divider" data-content="TABLE OF CONTENTS">
+          <li
+            class="divider"
+            data-content="TABLE OF CONTENTS"
+            role="presentation"
+          >
             <span>Table of contents</span>
           </li>
           <li v-for="header in doc.toc" :key="header.id" class="menu-item">

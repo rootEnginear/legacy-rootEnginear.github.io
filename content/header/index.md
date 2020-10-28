@@ -14,7 +14,7 @@ email: "Double click to show"
 
 > Frontend Developer
 
-Good to see you! I'm 3^rd^ year computer-engineering student at King Mongkut's University of Technology Thonburi (KMUTT) who love coding and seeking new possibilities. 👨‍💻
+A 3^rd^ year computer-engineering student who is very attentive to every detail. Any untidy elements by any pixels cannot bypass his sharp, neat, eagle eyes. Still, he is very friendly and reasonable rational. 👨‍💻&#xFE0F;
 
 <table>
   <tbody>
