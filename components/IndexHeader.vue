@@ -35,6 +35,8 @@
                 base-path=""
                 block
                 img-style="width:.9rem;margin:auto"
+                width="24"
+                height="24"
               />
             </td>
             <td class="pl-1">
@@ -59,6 +61,8 @@
         base-path=""
         responsive
         img-class="s-circle"
+        width="406"
+        height="406"
       />
     </div>
   </header>

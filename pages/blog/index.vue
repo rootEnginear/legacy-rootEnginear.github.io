@@ -10,10 +10,10 @@
         <nuxt-link
           :to="doc.path"
           class="text-dark d-flex"
-          style="text-decoration: none; flex: 1 1 0;"
+          style="text-decoration: none; flex: 1 1 0"
         >
-          <div class="card c-hand" style="width: 100%;">
-            <div class="card-image" style="position: relative;">
+          <div class="card c-hand" style="width: 100%">
+            <div class="card-image" style="position: relative">
               <!-- picture max dimension: 404px -->
               <m-picture
                 :data-images="[
@@ -28,7 +28,9 @@
                 base-path=""
                 :alt="doc.title"
                 responsive
-                style="position: absolute; top: 0;"
+                style="position: absolute; top: 0"
+                width="404"
+                height="404"
               />
             </div>
             <div class="card-header">
@@ -39,7 +41,7 @@
             </div>
             <div
               class="card-footer text-right"
-              style="font-size: 80%; padding-top: 0.4rem;"
+              style="font-size: 80%; padding-top: 0.4rem"
             >
               {{ doc.dateWritten | formatDate }} 📅
             </div>

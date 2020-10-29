@@ -15,6 +15,8 @@
       :style="picture_style"
       :class="imgClass"
       loading="lazy"
+      :width="width"
+      :height="height"
     />
     <noscript inline-template>
       <img
@@ -75,6 +77,9 @@ export default {
     },
     // use max width
     useMaxWidth: Boolean,
+    // width & height
+    width: String | Number,
+    height: String | Number,
   },
   mounted() {
     // Lazy Load

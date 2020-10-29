@@ -3,6 +3,8 @@
     <img
       src="@/assets/external-link.svg"
       :alt="props.dataAlt || 'Go to the homepage'"
+      width="24"
+      height="24"
     />
   </a>
 </template>
