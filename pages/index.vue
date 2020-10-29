@@ -187,7 +187,8 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Keep coding and seeking new possibilities.",
+          content:
+            "A 3rd-year computer-engineering student who is neat and very attentive to every detail. Yet, he is friendly and rational.",
         },
       ],
     };
