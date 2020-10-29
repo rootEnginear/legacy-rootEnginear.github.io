@@ -148,8 +148,8 @@
             <p>
               <strong>King Mongkut's University of Technology Thonburi</strong
               ><br />
-              Studying bachelor's degree (3<sup>rd</sup> year), majoring in
-              computer engineering.<br />
+              Studying bachelor's degree (3<sup>rd</sup> year).<br />
+              Majoring in computer engineering.<br />
               Current Cumulative GPA: 3.15
             </p>
           </li>
