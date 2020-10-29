@@ -21,9 +21,32 @@ export default {
         hid: "description",
         name: "description",
         content: "Keep coding and seeking new possibilities."
-      }
+      },
+      { name: "apple-mobile-web-app-title", content: "rootEnginear" },
+      { name: "application-name", content: "rootEnginear" },
+      { name: "msapplication-TileColor", content: "#e34234" },
+      { name: "theme-color", content: "#ffffff" }
     ],
     link: [
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png"
+      },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#e34234" },
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "preconnect",
