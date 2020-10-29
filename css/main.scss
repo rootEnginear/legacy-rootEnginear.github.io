@@ -63,6 +63,13 @@ ul {
   list-style-position: outside;
 }
 
+li {
+  > ol,
+  > ul {
+    margin: 0 0 0 0.8rem;
+  }
+}
+
 a {
   cursor: pointer;
 
@@ -92,10 +99,6 @@ pre > code {
   font-size: 0.75rem;
   line-height: initial;
   padding: initial;
-}
-
-.divider > span {
-  display: none;
 }
 
 .label {
@@ -145,4 +148,10 @@ pre > code {
 
 .small {
   font-size: 0.9em;
+}
+
+table.table-job > tbody > tr > td:first-of-type {
+  vertical-align: top;
+  padding-right: 1ch;
+  white-space: nowrap;
 }

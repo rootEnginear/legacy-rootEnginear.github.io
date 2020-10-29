@@ -13,9 +13,7 @@
             class="divider"
             data-content="TABLE OF CONTENTS"
             role="presentation"
-          >
-            <span>Table of contents</span>
-          </li>
+          ></li>
           <li v-for="header in doc.toc" :key="header.id" class="menu-item">
             <a
               :class="{ indent: header.depth === 3 }"
