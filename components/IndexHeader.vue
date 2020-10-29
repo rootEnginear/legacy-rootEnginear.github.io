@@ -4,10 +4,10 @@
       <h1>Suthep Chanchuphol</h1>
       <blockquote>Frontend Developer</blockquote>
       <p>
-        A 3<sup>rd</sup> year computer-engineering student who is very attentive
+        A 3<sup>rd</sup>-year computer-engineering student who is very attentive
         to every detail. Any untidy elements by any pixels cannot bypass his
-        sharp, neat, eagle eyes. Still, he is very friendly and reasonable
-        rational. 👨‍💻&#xFE0F;
+        sharp, neat, eagle eyes. Still, he is friendly and reasonable rational.
+        👨‍💻&#xFE0F;
       </p>
       <table>
         <tbody>
