@@ -197,13 +197,19 @@ export default {
         { property: "og:url", content: "https://rootenginear.github.io/" },
         { property: "og:title", content: FULL_TITLE },
         { property: "og:description", content: DESCRIPTION },
-        { property: "og:image", content: "/social.jpg" },
+        {
+          property: "og:image",
+          content: "https://rootenginear.github.io/social.jpg",
+        },
         // Twitter
         { property: "twitter:card", content: "summary_large_image" },
         { property: "twitter:url", content: "https://rootenginear.github.io/" },
         { property: "twitter:title", content: FULL_TITLE },
         { property: "twitter:description", content: DESCRIPTION },
-        { property: "twitter:image", content: "/social.jpg" },
+        {
+          property: "twitter:image",
+          content: "https://rootenginear.github.io/social.jpg",
+        },
       ],
     };
   },
