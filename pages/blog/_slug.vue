@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import NUXT_CONFIG from "~/nuxt.config";
 const CONTENT_PATH = "blog/";
 
 export default {
@@ -68,16 +67,16 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        lang: this.doc.lang || NUXT_CONFIG.head.htmlAttrs.lang,
+        lang: this.doc.lang || "th", // nuxt.config
       },
-      title: this.doc.title || NUXT_CONFIG.head.title,
+      title: this.doc.title || "An untitled page", // nuxt.config
+      titleTemplate: "%s - Blog of @rootEnginear",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            this.doc.description ||
-            this.doc.title + " - All about @rootEnginear",
+            this.doc.description || this.doc.title + " - Blog of @rootEnginear",
         },
       ],
     };

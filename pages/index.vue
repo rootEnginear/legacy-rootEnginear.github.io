@@ -167,29 +167,43 @@
 </template>
 
 <script>
-import IndexHeader from "@/components/IndexHeader";
 import AppExternalLink from "@/components/AppExternalLink";
+import IndexHeader from "@/components/IndexHeader";
 import { JOBS } from "@/content/jobs";
 import { SIDE_PROJECTS } from "@/content/side_projects";
 
+const TITLE = "Suthep Chanchuphol";
+const FULL_TITLE = TITLE + " - All about @rootEnginear"; // nuxt.config
+const DESCRIPTION =
+  "A 3rd-year computer-engineering student who is neat and very attentive to every detail. Yet, he is friendly and rational.";
+
 export default {
   components: {
-    IndexHeader,
     AppExternalLink,
+    IndexHeader,
   },
   head() {
     return {
       htmlAttrs: {
         lang: "en-US",
       },
-      title: "Suthep Chanchuphol",
+      title: TITLE,
       meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "A 3rd-year computer-engineering student who is neat and very attentive to every detail. Yet, he is friendly and rational.",
-        },
+        // Title/Description
+        { name: "title", content: FULL_TITLE },
+        { hid: "description", name: "description", content: DESCRIPTION },
+        // OG, FB
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://rootenginear.github.io/" },
+        { property: "og:title", content: FULL_TITLE },
+        { property: "og:description", content: DESCRIPTION },
+        { property: "og:image", content: "/social.jpg" },
+        // Twitter
+        { property: "twitter:card", content: "summary_large_image" },
+        { property: "twitter:url", content: "https://rootenginear.github.io/" },
+        { property: "twitter:title", content: FULL_TITLE },
+        { property: "twitter:description", content: DESCRIPTION },
+        { property: "twitter:image", content: "/social.jpg" },
       ],
     };
   },
@@ -208,9 +222,6 @@ export default {
           16
       );
     },
-  },
-  mounted() {
-    console.log(this.jobs);
   },
 };
 </script>
