@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import AppNavbar from "@/components/AppNavbar";
 import AppGoTop from "@/components/AppGoTop";
+import AppNavbar from "@/components/AppNavbar";
 import AppFooter from "@/components/AppFooter";
 
 export default {
   components: {
-    AppNavbar,
     AppGoTop,
+    AppNavbar,
     AppFooter,
   },
 };

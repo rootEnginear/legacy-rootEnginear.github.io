@@ -68,7 +68,8 @@ export default {
   },
   head() {
     return {
-      title: "Blog",
+      title: "Blog posts",
+      titleTemplate: "%s - Blog of @rootEnginear",
       meta: [
         {
           hid: "description",
@@ -90,7 +91,6 @@ export default {
   },
   filters: {
     formatDate(value) {
-      console.log(value);
       return Intl.DateTimeFormat("en-GB", {
         year: "numeric",
         month: "numeric",

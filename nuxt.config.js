@@ -1,33 +1,30 @@
 export default {
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
+  // Nuxt target
   target: "static",
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
+  // Headers of the page - https://nuxtjs.org/api/configuration-head
   head: {
-    htmlAttrs: {
-      lang: "th"
-    },
+    htmlAttrs: { lang: "th" },
     title: "An untitled page",
     titleTemplate: "%s - All about @rootEnginear",
     meta: [
+      // Standard Config
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { "http-equiv": "X-UA-Compatible", content: "ie=edge" },
+      // Description
       {
         hid: "description",
         name: "description",
         content: "Keep coding and seeking new possibilities."
       },
+      // Favicon meta
       { name: "apple-mobile-web-app-title", content: "rootEnginear" },
       { name: "application-name", content: "rootEnginear" },
       { name: "msapplication-TileColor", content: "#e34234" },
       { name: "theme-color", content: "#ffffff" }
     ],
     link: [
+      // Favicon link
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
@@ -48,14 +45,9 @@ export default {
       { rel: "manifest", href: "/site.webmanifest" },
       { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#e34234" },
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "preconnect",
-        href: "https://cdn.jsdelivr.net"
-      },
-      {
-        rel: "dns-prefetch",
-        href: "https://cdn.jsdelivr.net"
-      },
+      // Pre-things
+      { rel: "preconnect", href: "https://cdn.jsdelivr.net" },
+      { rel: "dns-prefetch", href: "https://cdn.jsdelivr.net" },
       {
         rel: "preload",
         as: "style",
@@ -124,36 +116,17 @@ export default {
     ],
     __dangerouslyDisableSanitizers: ["noscript"]
   },
-  /*
-   ** Global CSS
-   */
+  // Global CSS
   css: ["~/css/fonts.css", "~/css/main.scss"],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
+  // Plugins - https://nuxtjs.org/guide/plugins
   plugins: [],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
+  // Auto import components - https://nuxtjs.org/api/configuration-components
   components: true,
-  /*
-   ** Nuxt.js dev-modules
-   */
+  // Nuxt.js dev-modules
   buildModules: ["@nuxtjs/google-gtag"],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://github.com/nuxt/content
-    "@nuxt/content",
-    "@nuxtjs/sitemap"
-  ],
-  /*
-   ** Content module configuration
-   ** See https://content.nuxtjs.org/configuration
-   */
+  // Nuxt.js modules
+  modules: ["@nuxt/content", "@nuxtjs/sitemap"],
+  // Content module configuration - https://content.nuxtjs.org/configuration
   content: {
     liveEdit: false,
     markdown: {
@@ -177,17 +150,9 @@ export default {
       "/blog/mystudy-1-2",
       "/blog/mystudy-1-3"
     ],
-    defaults: {
-      changefreq: "monthly",
-      priority: 0.7
-    }
+    defaults: { changefreq: "monthly", priority: 0.7 }
   },
-  "google-gtag": {
-    id: "G-F2N4EGMQ22"
-  },
-  /*
-   ** Build configuration
-   ** See https://nuxtjs.org/api/configuration-build/
-   */
-  build: {}
+  "google-gtag": { id: "G-F2N4EGMQ22" },
+  // Build configuration - https://nuxtjs.org/api/configuration-build/
+  build: { extractCSS: true }
 };
