@@ -1,5 +1,5 @@
 <template>
-  <div class="columns">
+  <div class="columns no-print">
     <div class="column">
       <a v-if="this.$nuxt.$route.path !== '/'" @click="$router.go(-1)"
         >&laquo; Back</a

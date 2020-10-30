@@ -1,7 +1,8 @@
 <template functional>
   <footer class="no-print">
-    Copyright &copy; {{ new Date().getFullYear() }} Suthep Chanchuphol All right
-    reserved.
+    Copyright &copy; {{ new Date().getFullYear() }}
+    <span class="no-br">Suthep Chanchuphol</span>
+    <span class="no-br">All right reserved.</span>
     <br />
     <small
       >Also, check out this awesome CSS framework &ndash;
@@ -20,3 +21,11 @@ export default {
   name: "AppFooter",
 };
 </script>
+
+<style scoped>
+@media (max-width: 480px) {
+  footer {
+    text-align: center;
+  }
+}
+</style>

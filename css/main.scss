@@ -6,6 +6,9 @@ html {
 
 body {
   margin: 32px 6%;
+  @media (max-width: 480px) {
+    margin-bottom: 48px;
+  }
   min-height: 100vh;
   font-family: "IBM Plex Sans", "IBM Plex Sans Thai Looped", sans-serif;
   line-height: 1.7;
@@ -23,15 +26,9 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 .h1,
 .h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+.h3 {
   font-weight: 700;
   text-rendering: optimizeLegibility;
   letter-spacing: 0.1px;
@@ -154,4 +151,26 @@ table.table-job > tbody > tr > td:first-of-type {
   vertical-align: top;
   padding-right: 1ch;
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  table.table-job > tbody > tr {
+    display: flex;
+    flex-direction: column;
+
+    > td:first-of-type::after {
+      content: ":";
+    }
+
+    > td:nth-of-type(2) {
+      border-left: 0.1rem solid #dadee4;
+      margin-left: 0;
+      padding: 0 0.5rem;
+      margin-left: 0.3rem;
+    }
+  }
+
+  .hide-xs {
+    display: none;
+  }
 }

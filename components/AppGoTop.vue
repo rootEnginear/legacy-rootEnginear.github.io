@@ -1,6 +1,11 @@
 <template>
   <transition name="fade">
-    <a class="gotop-button" v-if="scroll_top_enabled" @click="goTop"></a>
+    <a
+      class="gotop-button no-print"
+      v-if="scroll_top_enabled"
+      @click="goTop"
+      :data-placeholder="placeholder"
+    ></a>
   </transition>
 </template>
 
@@ -23,6 +28,12 @@ function debounce(func, wait, immediate) {
 
 export default {
   name: "AppGoTop",
+  props: {
+    placeholder: {
+      default: "กลับด้านบน",
+      type: String,
+    },
+  },
   created() {
     this.goTopHandler = debounce(() => {
       this.useGoTop();
@@ -117,7 +128,7 @@ export default {
     border-radius: 0;
 
     &::before {
-      content: "กลับด้านบน";
+      content: attr(data-placeholder);
       margin-right: 0.5rem;
       white-space: nowrap;
       display: block;

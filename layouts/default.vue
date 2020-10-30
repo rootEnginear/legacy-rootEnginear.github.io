@@ -1,11 +1,13 @@
 <template>
   <div class="container grid-lg">
-    <app-navbar class="no-print" />
+    <app-navbar />
     <hr class="mb-2 no-print" />
     <nuxt />
     <hr class="mt-2 no-print" />
     <client-only>
-      <app-go-top class="no-print" />
+      <app-go-top
+        :placeholder="this.$nuxt.$route.path !== '/' ? 'กลับด้านบน' : 'Go top'"
+      />
     </client-only>
     <app-footer />
   </div>

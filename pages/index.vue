@@ -15,27 +15,32 @@
               href="javascript:void(0)"
               @click="gotoHash('technological-skills')"
             >
-              <span aria-hidden="true">🔮&#xFE0F;</span> Technological Skills
+              <span class="hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+              Technological Skills
             </a>
           </li>
           <li class="menu-item">
             <a href="javascript:void(0)" @click="gotoHash('work-experiences')">
-              <span aria-hidden="true">💼&#xFE0F;</span> Work Experiences
+              <span class="hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work
+              Experiences
             </a>
           </li>
           <li class="menu-item">
             <a href="javascript:void(0)" @click="gotoHash('side-projects')">
-              <span aria-hidden="true">🕹&#xFE0F;</span> Side Projects
+              <span class="hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side
+              Projects
             </a>
           </li>
           <li class="menu-item">
             <a href="javascript:void(0)" @click="gotoHash('languages')">
-              <span aria-hidden="true">💬&#xFE0F;</span> Languages
+              <span class="hide-xs" aria-hidden="true">💬&#xFE0F;</span>
+              Languages
             </a>
           </li>
           <li class="menu-item">
             <a href="javascript:void(0)" @click="gotoHash('education')">
-              <span aria-hidden="true">👨‍🎓&#xFE0F;</span> Education
+              <span class="hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span>
+              Education
             </a>
           </li>
         </ul>
@@ -43,22 +48,31 @@
       </aside>
       <main class="col- col-md-12 col-9">
         <h2 id="technological-skills">
-          <span aria-hidden="true">🔮&#xFE0F;</span> Technological Skills
+          <span class="hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+          Technological Skills
         </h2>
         <div class="cols">
           <div class="col- col-6">
-            <p><span aria-hidden="true">🔥&#xFE0F;</span> Proficient in:</p>
+            <p>
+              <span class="hide-xs" aria-hidden="true">🔥&#xFE0F;</span>
+              Proficient in:
+            </p>
             <ul>
               <li>HTML &amp; CSS</li>
               <li>JavaScript</li>
               <li>
-                Vue.js and its ecosystem
-                <span class="small no-br">(CLI, Router, Vuex, Nuxt)</span>
+                Vue.js and <span class="no-br">its ecosystem</span>
+                <span class="small"
+                  ><span class="no-br">(CLI, Router,</span> Vuex, Nuxt)</span
+                >
               </li>
             </ul>
           </div>
           <div class="col- col-6">
-            <p><span aria-hidden="true">👍&#xFE0F;</span> Experienced with:</p>
+            <p>
+              <span class="hide-xs" aria-hidden="true">👍&#xFE0F;</span>
+              Experienced with:
+            </p>
             <ul>
               <li>SCSS/SASS</li>
               <li>Firebase</li>
@@ -68,7 +82,10 @@
             </ul>
           </div>
           <div class="col- col-6">
-            <p><span aria-hidden="true">👌&#xFE0F;</span> Familiar with:</p>
+            <p>
+              <span class="hide-xs" aria-hidden="true">👌&#xFE0F;</span>
+              Familiar with:
+            </p>
             <ul>
               <li>TypeScript</li>
               <li>React.js</li>
@@ -82,7 +99,10 @@
             </ul>
           </div>
           <div class="col- col-6">
-            <p><span aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other interests:</p>
+            <p>
+              <span class="hide-xs" aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other
+              interests:
+            </p>
             <ul>
               <li>Mobile Application Development</li>
               <li>Artificial Intelligences</li>
@@ -92,7 +112,8 @@
         </div>
         <hr />
         <h2 id="work-experiences">
-          <span aria-hidden="true">💼&#xFE0F;</span> Work Experiences
+          <span class="hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work
+          Experiences
         </h2>
         <table class="table-job">
           <tbody>
@@ -105,7 +126,9 @@
                 <span>{{ job.description }}</span>
                 <br />
                 <span class="small">
-                  <span aria-hidden="true" role="presentation">&mdash; </span>
+                  <span class="hide-xs" aria-hidden="true" role="presentation"
+                    >&mdash;
+                  </span>
                   Keywords: {{ job.keywords.join(", ") }}
                 </span>
               </td>
@@ -114,7 +137,8 @@
         </table>
         <hr />
         <h2 id="side-projects">
-          <span aria-hidden="true">🕹&#xFE0F;</span> Side Projects
+          <span class="hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side
+          Projects
         </h2>
         <ul>
           <li v-for="(project, index) in side_projects" :key="index">
@@ -124,7 +148,9 @@
               <span>{{ project.description }}</span
               ><br />
               <span class="small">
-                <span aria-hidden="true" role="presentation">&mdash; </span>
+                <span class="hide-xs" aria-hidden="true" role="presentation"
+                  >&mdash;
+                </span>
                 Keywords: {{ project.keywords.join(", ") }}
               </span>
             </p>
@@ -132,7 +158,7 @@
         </ul>
         <hr />
         <h2 id="languages">
-          <span aria-hidden="true">💬&#xFE0F;</span> Languages
+          <span class="hide-xs" aria-hidden="true">💬&#xFE0F;</span> Languages
         </h2>
         <ul>
           <li><strong>Thai:</strong> Native speaker</li>
@@ -141,14 +167,15 @@
         </ul>
         <hr />
         <h2 id="education">
-          <span aria-hidden="true">👨‍🎓&#xFE0F;</span> Education
+          <span class="hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span> Education
         </h2>
         <ul>
           <li>
             <p>
               <strong>King Mongkut's University of Technology Thonburi</strong
               ><br />
-              Studying bachelor's degree (3<sup>rd</sup> year).<br />
+              Studying bachelor's degree
+              <span class="no-br">(3<sup>rd</sup> year).</span><br />
               Majoring in computer engineering.<br />
               Current Cumulative GPA: 3.15
             </p>
