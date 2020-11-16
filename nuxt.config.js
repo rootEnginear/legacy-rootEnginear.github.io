@@ -119,7 +119,7 @@ export default {
   // Global CSS
   css: ["~/css/fonts.css", "~/css/main.scss"],
   // Plugins - https://nuxtjs.org/guide/plugins
-  plugins: [],
+  plugins: [{ src: "~plugins/clarity.js", mode: "client" }],
   // Auto import components - https://nuxtjs.org/api/configuration-components
   components: true,
   // Nuxt.js dev-modules
