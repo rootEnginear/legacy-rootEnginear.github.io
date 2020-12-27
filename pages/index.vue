@@ -61,7 +61,7 @@
               <li>HTML &amp; CSS</li>
               <li>JavaScript</li>
               <li>
-                Vue.js and <span class="no-br">its ecosystem</span>
+                Vue.js
                 <span class="small"
                   ><span class="no-br">(CLI, Router,</span> Vuex, Nuxt)</span
                 >
@@ -76,7 +76,10 @@
             <ul>
               <li>SCSS/SASS</li>
               <li>Firebase</li>
-              <li>SQL, RDBMS (MySQL, MariaDB)</li>
+              <li>
+                SQL, RDBMS
+                <span class="small">(MySQL, MariaDB)</span>
+              </li>
               <li>UI/UX Designing</li>
               <li>Git</li>
             </ul>
@@ -88,11 +91,20 @@
             </p>
             <ul>
               <li>TypeScript</li>
-              <li>React.js</li>
+              <li>
+                React.js
+                <span class="small"
+                  >(CRA,
+                  <span class="no-br">Styled Components,</span> Next.js)</span
+                >
+              </li>
               <li>
                 Node.js
                 <ul>
-                  <li>Express (RESTfulAPI)</li>
+                  <li>
+                    Express.js
+                    <span class="small">(RESTfulAPI)</span>
+                  </li>
                   <li>Socket.IO</li>
                 </ul>
               </li>
