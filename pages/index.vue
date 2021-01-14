@@ -189,7 +189,7 @@
               Studying bachelor's degree
               <span class="no-br">(3<sup>rd</sup> year).</span><br />
               Majoring in computer engineering.<br />
-              Current Cumulative GPA: 3.15
+              Current Cumulative GPA: 3.14
             </p>
           </li>
           <li>
