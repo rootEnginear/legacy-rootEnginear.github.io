@@ -7,7 +7,8 @@
     </div>
     <nav class="main-navigation column col-auto" role="navigation">
       <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/blog">Blog</nuxt-link>
+      <!-- <nuxt-link to="/blog">Blog</nuxt-link> -->
+      <a href="https://rootenginear.gitbook.io/blog/">Blog</a>
     </nav>
   </div>
 </template>
