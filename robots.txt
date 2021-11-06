@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /blog
 Disallow: /ComCamp31-Homepage
 Disallow: /ModCom2019-Homepage
 Sitemap: https://rootenginear.github.io/sitemap.xml
