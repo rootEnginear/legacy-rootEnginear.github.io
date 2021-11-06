@@ -155,7 +155,7 @@
 								<td>
 									<strong>{job.title}</strong>&nbsp;{#if job.place}at {job.place}{/if}
 									{#if job.link}
-										<AppExternalLink href={job.link} alt={job.title} />
+										<AppExternalLink href={job.link} />
 									{/if}
 									<br />
 									<span>{job.description}</span>
@@ -181,7 +181,7 @@
 							<p>
 								<strong>{project.title}</strong>
 								{#if project.link}
-									<AppExternalLink href={project.link} alt={project.title} />
+									<AppExternalLink href={project.link} />
 								{/if}
 								<br />
 								<span>{project.description}</span><br />
