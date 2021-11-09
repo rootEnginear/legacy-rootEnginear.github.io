@@ -313,7 +313,7 @@
 				<ul>
 					<li>
 						I learned how to code for the first time when I was in 4th grade. I began learning to
-						write Visual Basic scripts in Microsoft Excel (aka the VBA). I didn't even know what is
+						write Visual Basic scripts in Microsoft Excel (aka the VBA.) I didn't even know what is
 						the difference between a string and an integer at that time. But learning from trial and
 						errors worked out for me (or should I say "If it worked, don't touch." worked for me.)
 					</li>
