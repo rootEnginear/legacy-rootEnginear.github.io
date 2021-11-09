@@ -41,6 +41,12 @@ hr {
 	margin: 0.8rem 0;
 }
 
+// .blockquote {
+// 	border-left: $border-width-lg solid $border-color;
+// 	margin-left: 0;
+// 	padding: $unit-2 $unit-4;
+// }
+
 mark {
 	border-bottom: none;
 }
@@ -113,24 +119,25 @@ pre > code {
 	content: '— ';
 }
 
-.page-enter-active,
-.page-leave-active {
-	transition: all 0.5s;
-}
+// .page-enter-active,
+// .page-leave-active {
+// 	transition: all 0.5s;
+// }
 
-.page-enter {
-	opacity: 0;
-	transform: translateY(10%);
-}
+// .page-enter {
+// 	opacity: 0;
+// 	transform: translateY(10%);
+// }
 
-.page-leave-to {
-	opacity: 0;
-	transform: translateX(-10%);
-}
+// .page-leave-to {
+// 	opacity: 0;
+// 	transform: translateX(-10%);
+// }
 
 @media print {
 	.no-print,
-	.no-print * {
+	.no-print *,
+	details:not([open]) {
 		display: none !important;
 	}
 
@@ -172,5 +179,24 @@ table.table-job > tbody > tr > td:first-of-type {
 
 	.hide-xs {
 		display: none;
+	}
+}
+
+.achievement-container {
+	margin-bottom: $unit-5;
+
+	.ach-content {
+		margin-bottom: $unit-3;
+	}
+
+	.ach-image-container {
+		display: flex;
+		align-items: center;
+
+		> picture > img {
+			@media (max-width: $size-xs) {
+				margin-top: $unit-3;
+			}
+		}
 	}
 }

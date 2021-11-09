@@ -31,6 +31,7 @@
 		{decoding}
 		{width}
 		{height}
+		title={alt}
 		draggable={false}
 		style={image_styles}
 	/>

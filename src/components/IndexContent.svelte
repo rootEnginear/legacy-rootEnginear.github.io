@@ -1,6 +1,7 @@
 <script>
 	import AppHidden from 'components/AppHidden.svelte';
 	import AppImage from 'components/AppImage.svelte';
+	import AppExternalLink from 'components/AppExternalLink.svelte';
 
 	const PROFILE_IMAGES = [
 		{ src: 'profile.webp', type: 'image/webp' },
@@ -16,11 +17,11 @@
 <header class="cols">
 	<div class="col- col-xs-12 col-md-7 col-lg-8 col-9">
 		<h1>Suthep Chanchuphol</h1>
-		<blockquote>Frontend Developer 👨‍💻&#xFE0F;</blockquote>
+		<blockquote>Frontend Developer</blockquote>
 		<p>
 			A 4th-year computer-engineering student who is very attentive to every detail. Any untidy
 			elements by any pixels cannot bypass his sharp, neat, eagle eyes. Still, he is very friendly
-			and reasonable.
+			and reasonable. 👨‍💻&#xFE0F;
 		</p>
 		<table>
 			<tbody>
@@ -38,7 +39,7 @@
 					<td aria-hidden="true">
 						<AppImage
 							images={ICONS.linkedin}
-							alt="GitHub"
+							alt="LinkedIn"
 							block
 							imgStyle="width:.9rem;margin:auto"
 							width={24}
@@ -46,10 +47,8 @@
 						/>
 					</td>
 					<td class="pl-1">
-						<a
-							href="https://www.linkedin.com/in/suthep-ch/"
-							rel="nofollow noopener noreferrer"
-							target="_blank">LinkedIn</a
+						<AppExternalLink href="https://www.linkedin.com/in/suthep-ch/" noIcon
+							>LinkedIn</AppExternalLink
 						>
 					</td>
 				</tr>
@@ -65,11 +64,7 @@
 						/>
 					</td>
 					<td class="pl-1">
-						<a
-							href="https://github.com/rootEnginear"
-							rel="nofollow noopener noreferrer"
-							target="_blank">GitHub</a
-						>
+						<AppExternalLink href="https://github.com/rootEnginear" noIcon>GitHub</AppExternalLink>
 					</td>
 				</tr>
 			</tbody>
