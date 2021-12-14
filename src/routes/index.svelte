@@ -299,7 +299,7 @@
 								{#each education.description as line, j (j)}
 									{line}<br />
 								{/each}
-								{#if !education.graduate}Current{/if} Cumulative GPA: {education.gpa}
+								{#if !education.graduate}Current{/if} Cumulative GPA: {education.gpa} (out of 4.00)
 							</p>
 						</li>
 					{/each}
