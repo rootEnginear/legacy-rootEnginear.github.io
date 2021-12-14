@@ -21,16 +21,16 @@
 		<p>
 			A 4th-year computer-engineering student who is very attentive to every detail. Any untidy
 			elements by any pixels cannot bypass his sharp, neat, eagle eyes. Still, he is very friendly
-			and reasonable. 👨‍💻&#xFE0F;
+			and reasonable. <span class="emoji hide-xs" aria-hidden="true">👨‍💻&#xFE0F;</span>
 		</p>
 		<table>
 			<tbody>
 				<tr>
-					<td class="text-center" aria-hidden="true">🗺&#xFE0F;</td>
+					<td class="emoji text-center" aria-hidden="true">🗺&#xFE0F;</td>
 					<td class="pl-1">Bangkok, Thailand.</td>
 				</tr>
 				<tr>
-					<td class="text-center" aria-hidden="true">📧&#xFE0F;</td>
+					<td class="emoji text-center" aria-hidden="true">📧&#xFE0F;</td>
 					<td class="pl-1">
 						<AppHidden data="suthep.chanchuphol(at)outlook.com" />
 					</td>
