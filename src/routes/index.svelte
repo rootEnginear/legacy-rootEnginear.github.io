@@ -66,40 +66,40 @@
 				<li class="divider" data-content="TABLE OF CONTENTS" role="presentation" />
 				<li class="menu-item">
 					<a href="#work-experiences" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work Experiences
+						<span class="emoji hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work Experiences
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#achievements" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">🏆&#xFE0F;</span> Achievements
+						<span class="emoji hide-xs" aria-hidden="true">🏆&#xFE0F;</span> Achievements
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#technological-skills" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+						<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
 						Technological Skills
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#side-projects" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side Projects
+						<span class="emoji hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side Projects
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#languages" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">💬&#xFE0F;</span>
+						<span class="emoji hide-xs" aria-hidden="true">💬&#xFE0F;</span>
 						Languages
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#education" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span>
+						<span class="emoji hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span>
 						Education
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="#random-facts" on:click|preventDefault={manualScroll}>
-						<span class="hide-xs" aria-hidden="true">🏝&#xFE0F;</span>
+						<span class="emoji hide-xs" aria-hidden="true">🏝&#xFE0F;</span>
 						Random Facts
 					</a>
 				</li>
@@ -110,7 +110,7 @@
 			<!-- Work Experiences -->
 			<section>
 				<h2 id="work-experiences">
-					<span class="hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work Experiences
+					<span class="emoji hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work Experiences
 				</h2>
 				<table class="table-job">
 					<tbody>
@@ -162,7 +162,7 @@
 			<!-- Achievements -->
 			<section>
 				<h2 id="achievements">
-					<span class="hide-xs" aria-hidden="true">🏆&#xFE0F;</span> Achievements
+					<span class="emoji hide-xs" aria-hidden="true">🏆&#xFE0F;</span> Achievements
 				</h2>
 				{#each ACHIEVEMENTS as ach, i (i)}
 					<article class="achievement-container">
@@ -200,13 +200,13 @@
 			<!-- Technological Skills -->
 			<section>
 				<h2 id="technological-skills">
-					<span class="hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+					<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
 					Technological Skills
 				</h2>
 				<div class="cols">
 					<div class="col- col-6">
 						<p>
-							<span class="hide-xs" aria-hidden="true">🔥&#xFE0F;</span>
+							<span class="emoji hide-xs" aria-hidden="true">🔥&#xFE0F;</span>
 							Proficient in:
 						</p>
 						<ul>
@@ -217,7 +217,7 @@
 					</div>
 					<div class="col- col-6">
 						<p>
-							<span class="hide-xs" aria-hidden="true">👍&#xFE0F;</span>
+							<span class="emoji hide-xs" aria-hidden="true">👍&#xFE0F;</span>
 							Experienced with:
 						</p>
 						<ul>
@@ -228,7 +228,7 @@
 					</div>
 					<div class="col- col-6">
 						<p>
-							<span class="hide-xs" aria-hidden="true">👌&#xFE0F;</span>
+							<span class="emoji hide-xs" aria-hidden="true">👌&#xFE0F;</span>
 							Familiar with:
 						</p>
 						<ul>
@@ -239,7 +239,7 @@
 					</div>
 					<div class="col- col-6">
 						<p>
-							<span class="hide-xs" aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other interests:
+							<span class="emoji hide-xs" aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other interests:
 						</p>
 						<ul>
 							{#each SKILLS.other as skill, i (i)}
@@ -253,7 +253,7 @@
 			<!-- Side Projects -->
 			<section>
 				<h2 id="side-projects">
-					<span class="hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side Projects
+					<span class="emoji hide-xs" aria-hidden="true">🕹&#xFE0F;</span> Side Projects
 				</h2>
 				<ul>
 					{#each SIDE_PROJECTS as project, i (i)}
@@ -277,7 +277,7 @@
 			<!-- Languages -->
 			<section>
 				<h2 id="languages">
-					<span class="hide-xs" aria-hidden="true">💬&#xFE0F;</span> Languages
+					<span class="emoji hide-xs" aria-hidden="true">💬&#xFE0F;</span> Languages
 				</h2>
 				<ul>
 					{#each LANGUAGES as language, i (i)}
@@ -289,7 +289,7 @@
 			<!-- Education -->
 			<section>
 				<h2 id="education">
-					<span class="hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span> Education
+					<span class="emoji hide-xs" aria-hidden="true">👨‍🎓&#xFE0F;</span> Education
 				</h2>
 				<ul>
 					{#each EDUCATIONS as education, i (i)}
@@ -308,7 +308,7 @@
 			<!-- Random Facts -->
 			<section>
 				<h2 id="random-facts">
-					<span class="hide-xs" aria-hidden="true">🏝&#xFE0F;</span> Random Facts
+					<span class="emoji hide-xs" aria-hidden="true">🏝&#xFE0F;</span> Random Facts
 				</h2>
 				<ul>
 					<li>
