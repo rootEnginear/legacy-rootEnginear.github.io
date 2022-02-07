@@ -4,11 +4,10 @@ const SKILLS = {
 	familiar: [
 		'Vue.js (CLI, Router, Vuex, Nuxt)',
 		'Svelte',
-		'Firebase',
 		'Node.js',
 		'SQL, RDBMS (MySQL, MariaDB)'
 	],
-	other: ['Mobile Application Development', 'Artificial Intelligences', 'Quantum Computing']
+	other: ['UI/UX', 'Artificial Intelligences', 'Quantum Computing']
 };
 
 export { SKILLS };

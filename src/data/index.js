@@ -5,5 +5,15 @@ import { LANGUAGES } from './languages';
 import { EDUCATIONS } from './educations';
 import { ACHIEVEMENTS } from './achievements';
 import { FREELANCE_JOBS } from './freelance_jobs';
+import { RANDOM_FACTS } from './random_facts';
 
-export { SKILLS, JOBS, SIDE_PROJECTS, LANGUAGES, EDUCATIONS, ACHIEVEMENTS, FREELANCE_JOBS };
+export {
+	SKILLS,
+	JOBS,
+	SIDE_PROJECTS,
+	LANGUAGES,
+	EDUCATIONS,
+	ACHIEVEMENTS,
+	FREELANCE_JOBS,
+	RANDOM_FACTS
+};

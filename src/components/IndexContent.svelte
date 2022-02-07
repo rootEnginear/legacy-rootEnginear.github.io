@@ -19,9 +19,12 @@
 		<h1>Suthep Chanchuphol</h1>
 		<blockquote>Frontend Developer</blockquote>
 		<p>
-			A 4th-year computer-engineering student who is very attentive to every detail. Any untidy
-			elements by any pixels cannot bypass his sharp, neat, eagle eyes. Still, he is very friendly
-			and reasonable. <span class="emoji hide-xs" aria-hidden="true">👨‍💻&#xFE0F;</span>
+			Pumped and full of energy! My expertise is about crafting pixel-perfect websites from designs.
+			Coding for 5+ years, working as a freelance developer on many projects; I am ready to learn
+			and take a challenge to make an exquisite and accessible website for people. <span
+				class="emoji hide-xs"
+				aria-hidden="true">👨‍💻&#xFE0F;</span
+			>
 		</p>
 		<table>
 			<tbody>
