@@ -50,7 +50,7 @@
 						/>
 					</td>
 					<td class="pl-1">
-						<AppExternalLink href="https://www.linkedin.com/in/suthep-ch/" noIcon
+						<AppExternalLink href="https://www.linkedin.com/in/rootEnginear/" noIcon
 							>LinkedIn</AppExternalLink
 						>
 					</td>
