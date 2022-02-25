@@ -5,7 +5,7 @@ const LANGUAGES = [
 	},
 	{
 		name: 'English',
-		level: 'Intermediate (TOEIC© 955/990)'
+		level: 'Intermediate (TOEIC® 955/990)'
 	}
 ];
 
