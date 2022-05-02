@@ -66,6 +66,12 @@
 			<ul class="menu toc-sticky">
 				<li class="divider" data-content="TABLE OF CONTENTS" role="presentation" />
 				<li class="menu-item">
+					<a href="#technological-skills" on:click|preventDefault={manualScroll}>
+						<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+						Technological Skills
+					</a>
+				</li>
+				<li class="menu-item">
 					<a href="#work-experiences" on:click|preventDefault={manualScroll}>
 						<span class="emoji hide-xs" aria-hidden="true">💼&#xFE0F;</span> Work Experiences
 					</a>
@@ -73,12 +79,6 @@
 				<li class="menu-item">
 					<a href="#achievements" on:click|preventDefault={manualScroll}>
 						<span class="emoji hide-xs" aria-hidden="true">🏆&#xFE0F;</span> Achievements
-					</a>
-				</li>
-				<li class="menu-item">
-					<a href="#technological-skills" on:click|preventDefault={manualScroll}>
-						<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
-						Technological Skills
 					</a>
 				</li>
 				<li class="menu-item">
@@ -108,6 +108,59 @@
 			<br />
 		</aside>
 		<main class="col- col-md-12 col-9">
+			<!-- Technological Skills -->
+			<section>
+				<h2 id="technological-skills">
+					<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
+					Technological Skills
+				</h2>
+				<div class="cols">
+					<div class="col- col-6">
+						<p>
+							<span class="emoji hide-xs" aria-hidden="true">🔥&#xFE0F;</span>
+							Proficient in:
+						</p>
+						<ul>
+							{#each SKILLS.proficient as skill, i (i)}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="col- col-6">
+						<p>
+							<span class="emoji hide-xs" aria-hidden="true">👍&#xFE0F;</span>
+							Experienced with:
+						</p>
+						<ul>
+							{#each SKILLS.experienced as skill, i (i)}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="col- col-6">
+						<p>
+							<span class="emoji hide-xs" aria-hidden="true">👌&#xFE0F;</span>
+							Familiar with:
+						</p>
+						<ul>
+							{#each SKILLS.familiar as skill, i (i)}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="col- col-6">
+						<p>
+							<span class="emoji hide-xs" aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other interests:
+						</p>
+						<ul>
+							{#each SKILLS.other as skill, i (i)}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+					</div>
+				</div>
+			</section>
+			<hr />
 			<!-- Work Experiences -->
 			<section>
 				<h2 id="work-experiences">
@@ -196,59 +249,6 @@
 						</div>
 					</article>
 				{/each}
-			</section>
-			<hr />
-			<!-- Technological Skills -->
-			<section>
-				<h2 id="technological-skills">
-					<span class="emoji hide-xs" aria-hidden="true">🔮&#xFE0F;</span>
-					Technological Skills
-				</h2>
-				<div class="cols">
-					<div class="col- col-6">
-						<p>
-							<span class="emoji hide-xs" aria-hidden="true">🔥&#xFE0F;</span>
-							Proficient in:
-						</p>
-						<ul>
-							{#each SKILLS.proficient as skill, i (i)}
-								<li>{skill}</li>
-							{/each}
-						</ul>
-					</div>
-					<div class="col- col-6">
-						<p>
-							<span class="emoji hide-xs" aria-hidden="true">👍&#xFE0F;</span>
-							Experienced with:
-						</p>
-						<ul>
-							{#each SKILLS.experienced as skill, i (i)}
-								<li>{skill}</li>
-							{/each}
-						</ul>
-					</div>
-					<div class="col- col-6">
-						<p>
-							<span class="emoji hide-xs" aria-hidden="true">👌&#xFE0F;</span>
-							Familiar with:
-						</p>
-						<ul>
-							{#each SKILLS.familiar as skill, i (i)}
-								<li>{skill}</li>
-							{/each}
-						</ul>
-					</div>
-					<div class="col- col-6">
-						<p>
-							<span class="emoji hide-xs" aria-hidden="true">🤸‍♂️&#xFE0F;</span> Other interests:
-						</p>
-						<ul>
-							{#each SKILLS.other as skill, i (i)}
-								<li>{skill}</li>
-							{/each}
-						</ul>
-					</div>
-				</div>
 			</section>
 			<hr />
 			<!-- Side Projects -->

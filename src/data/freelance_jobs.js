@@ -1,12 +1,6 @@
 const FREELANCE_JOBS = [
 	{
 		date: 'MAY 2021',
-		description:
-			"Working for IC WEB Co., Ltd. as a freelancer until September 2021. Responsible for creating and modifying web pages for the company's business partners, as well as composing pages from the design for their websites.",
-		keywords: ['SCSS', 'PHP']
-	},
-	{
-		date: 'MAY 2021',
 		description: 'Working for Tech BaseCamp as a freelancer on their new landing page.',
 		keywords: ['Next.js', 'TypeScript', 'Styled Components']
 	},
@@ -20,6 +14,13 @@ const FREELANCE_JOBS = [
 		description:
 			'Composing and migrating new design into production website for Vidyasirimedhi Institute of Science and Technology (VISTEC).',
 		keywords: ['SCSS (Bootstrap 4)', 'Gulp.js', 'Vue.js', 'PHP']
+	},
+	{
+		date: 'AUG 2020',
+		title: 'Teaching Assistant',
+		description:
+			'Helping lecturers and advising students in Digital System and Logic Design subject, computer engineering department, KMUTT.',
+		keywords: ['Digital circuit', 'Logic design', 'Soft skill']
 	},
 	{
 		date: 'JUL 2020',
