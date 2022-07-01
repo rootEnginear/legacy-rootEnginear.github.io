@@ -1,6 +1,12 @@
 const FREELANCE_JOBS = [
 	{
 		date: 'MAY 2021',
+		description:
+			"Working for IC WEB Co., Ltd. as a Freelance Front-end Developer. Responsible for creating and modifying web pages for the company's business partners, as well as composing pages from the design for their websites.",
+		keywords: ['SCSS', 'PHP', 'Management Skill', 'Soft Skill']
+	},
+	{
+		date: 'MAY 2021',
 		description: 'Working for Tech BaseCamp as a freelancer on their new landing page.',
 		keywords: ['Next.js', 'TypeScript', 'Styled Components']
 	},
