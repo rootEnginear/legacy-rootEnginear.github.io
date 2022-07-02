@@ -21,6 +21,9 @@ const config = {
 					styles: path.resolve('./src/styles')
 				}
 			}
+		},
+		prerender: {
+			default: true
 		}
 	}
 };
