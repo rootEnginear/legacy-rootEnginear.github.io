@@ -188,7 +188,7 @@
 					My primary work experience is listed above. I also worked as a freelancer or volunteered
 					on several projects while pursuing my bachelor's degree.
 				</p>
-				<details open>
+				<details>
 					<summary class="c-hand">List of my freelance and voluntary work</summary>
 					<table class="table-job">
 						<tbody>
