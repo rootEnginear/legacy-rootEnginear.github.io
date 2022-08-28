@@ -2,7 +2,7 @@ const EDUCATIONS = [
 	{
 		name: "King Mongkut's University of Technology Thonburi",
 		description: [
-			"Studying bachelor's degree (4th year).",
+			"Studying bachelor's degree.",
 			'Majoring in computer engineering.',
 			'(Graduating in January 2023)'
 		],
