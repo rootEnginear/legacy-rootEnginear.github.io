@@ -157,7 +157,10 @@ pre > code {
 table.table-job > tbody > tr > td:first-of-type {
 	vertical-align: top;
 	padding-right: 1ch;
-	white-space: nowrap;
+	padding-top: 0.4rem;
+	text-align: right;
+	font-size: 0.7rem;
+	line-height: 1;
 }
 
 @media (max-width: 480px) {

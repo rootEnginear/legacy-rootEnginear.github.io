@@ -30,34 +30,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Suthep Chanchuphol - All about @rootEnginear</title>
-	<mata name="title" content="Suthep Chanchuphol - All about @rootEnginear" />
-	<meta
-		name="description"
-		content="A 4th-year computer-engineering student who is neat and very attentive to every detail. Yet, he is very friendly."
-	/>
-
-	<!-- OG, FB -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://rootenginear.github.io/" />
-	<meta property="og:title" content="Suthep Chanchuphol - All about @rootEnginear" />
-	<meta
-		property="og:description"
-		content="A 4th-year computer-engineering student who is neat and very attentive to every detail. Yet, he is very friendly."
-	/>
-	<meta property="og:image" content="https://rootenginear.github.io/social.jpg" />
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://rootenginear.github.io/" />
-	<meta property="twitter:title" content="Suthep Chanchuphol - All about @rootEnginear" />
-	<meta
-		property="twitter:description"
-		content="A 4th-year computer-engineering student who is neat and very attentive to every detail. Yet, he is very friendly."
-	/>
-	<meta property="twitter:image" content="https://rootenginear.github.io/social.jpg" />
-</svelte:head>
-
 <div>
 	<IndexContent />
 	<hr />
@@ -170,7 +142,27 @@
 					<tbody>
 						{#each JOBS as job, i (i)}
 							<tr>
-								<td>{job.date}</td>
+								<td>
+									<div class="no-br">
+										{job.start_date
+											.toLocaleDateString('en', {
+												year: '2-digit',
+												month: 'short',
+												day: '2-digit'
+											})
+											.toUpperCase()}
+									</div>
+									<div class="no-br">—</div>
+									<div class="no-br">
+										{job.end_date
+											.toLocaleDateString('en', {
+												year: '2-digit',
+												month: 'short',
+												day: '2-digit'
+											})
+											.toUpperCase()}
+									</div>
+								</td>
 								<td>
 									<strong>{job.title}</strong>
 									{#if job.place?.name}at
@@ -196,13 +188,20 @@
 					My primary work experience is listed above. I also worked as a freelancer or volunteered
 					on several projects while pursuing my bachelor's degree.
 				</p>
-				<details>
+				<details open>
 					<summary class="c-hand">List of my freelance and voluntary work</summary>
 					<table class="table-job">
 						<tbody>
 							{#each FREELANCE_JOBS as job, i (i)}
 								<tr>
-									<td>{job.date}</td>
+									<td class="no-br"
+										>{job.date
+											.toLocaleDateString('en', {
+												year: 'numeric',
+												month: 'short'
+											})
+											.toUpperCase()}</td
+									>
 									<td>
 										{job.description}
 									</td>

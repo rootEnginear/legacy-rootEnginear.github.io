@@ -9,7 +9,7 @@ const ACHIEVEMENTS = [
 		],
 		imageAlt:
 			'IBM Certified Associate Developer in Quantum Computation using Qiskit version 0.2x Badge',
-		date: new Date(2021, 10, 4),
+		date: new Date(2021, 11 - 1, 4),
 		links: [
 			{
 				name: 'View on Credly',
@@ -26,7 +26,7 @@ const ACHIEVEMENTS = [
 			{ src: 'ywc18.jpg', type: 'image/jpeg' }
 		],
 		imageAlt: 'Certificate for winning an "Outstanding Award" in 18th Young Webmaster Camp',
-		date: new Date(2021, 7, 15),
+		date: new Date(2021, 8 - 1, 15),
 		links: [
 			{
 				name: 'Visit event Facebook page',

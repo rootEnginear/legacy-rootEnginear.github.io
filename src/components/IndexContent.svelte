@@ -17,7 +17,7 @@
 <header class="cols">
 	<div class="col- col-xs-12 col-md-7 col-lg-8 col-9">
 		<h1>Suthep Chanchuphol</h1>
-		<blockquote>Junior Frontend Developer (React.js/Next.js)</blockquote>
+		<blockquote>Junior Frontend Developer</blockquote>
 		<p>
 			<span style="font-weight:700">Pumped and full of energy!</span> My expertise is about crafting
 			pixel-perfect websites from designs. Coding for 5+ years, working as a freelance developer on
