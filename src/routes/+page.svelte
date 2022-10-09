@@ -143,7 +143,7 @@
 						{#each JOBS as job, i (i)}
 							<tr>
 								<td>
-									<div class="no-br">
+									<time class="no-br" datetime={job.start_date.toISOString()}>
 										{job.start_date
 											.toLocaleDateString('en', {
 												year: '2-digit',
@@ -151,17 +151,20 @@
 												day: '2-digit'
 											})
 											.toUpperCase()}
-									</div>
+									</time>
 									<div class="no-br">—</div>
-									<div class="no-br">
+									<time
+										class="no-br"
+										datetime={job.end_date?.toISOString() ?? new Date().toISOString()}
+									>
 										{job.end_date
-											.toLocaleDateString('en', {
+											?.toLocaleDateString('en', {
 												year: '2-digit',
 												month: 'short',
 												day: '2-digit'
 											})
-											.toUpperCase()}
-									</div>
+											.toUpperCase() ?? 'PRESENT'}
+									</time>
 								</td>
 								<td>
 									<strong>{job.title}</strong>
@@ -194,14 +197,16 @@
 						<tbody>
 							{#each FREELANCE_JOBS as job, i (i)}
 								<tr>
-									<td class="no-br"
-										>{job.date
-											.toLocaleDateString('en', {
-												year: 'numeric',
-												month: 'short'
-											})
-											.toUpperCase()}</td
-									>
+									<td class="no-br">
+										<time datetime={job.date.toISOString()}
+											>{job.date
+												.toLocaleDateString('en', {
+													year: 'numeric',
+													month: 'short'
+												})
+												.toUpperCase()}</time
+										>
+									</td>
 									<td>
 										{job.description}
 									</td>
@@ -227,13 +232,13 @@
 								</p>
 								<footer class="small">
 									&mdash;
-									<span>
+									<time datetime={ach.date.toISOString()}>
 										{ach.date.toLocaleDateString('en-US', {
 											year: 'numeric',
 											month: 'long',
 											day: 'numeric'
 										})}
-									</span>
+									</time>
 									{#if ach.links && ach.links.length}
 										|
 										{#each ach.links as link, j (j)}

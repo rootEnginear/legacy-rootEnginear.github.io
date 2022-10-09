@@ -1,5 +1,13 @@
 const JOBS = [
 	{
+		start_date: new Date(2022, 9 - 1, 19),
+		title: 'Frontend Web Developer (Full-time)',
+		place: { name: 'Punch Up', url: 'https://punchup.world/' },
+		description:
+			'Making an impact to the society through the use of data communication. I created scrolly-telling websites on various subjects such as politics, economics, law, etc.',
+		keywords: ['Data Communication', 'Data Visualization', 'D3.js']
+	},
+	{
 		start_date: new Date(2022, 5 - 1, 1),
 		end_date: new Date(2022, 8 - 1, 26),
 		title: 'Frontend Web Developer (Intern)',
