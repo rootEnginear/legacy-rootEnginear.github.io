@@ -6,7 +6,7 @@
 	<div class="column" />
 	<nav class="main-navigation column col-auto">
 		<a href="/">Home</a>
-		<AppExternalLink href="https://www.linkedin.com/in/suthep-ch/" noIcon
+		<AppExternalLink href="https://www.linkedin.com/in/rootEnginear/" noIcon
 			>Certificates</AppExternalLink
 		>
 		<AppExternalLink href="https://rootenginear.gitbook.io/blog/" noIcon>Blog</AppExternalLink>

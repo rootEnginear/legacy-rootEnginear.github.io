@@ -16,7 +16,7 @@
 
 <header class="cols">
 	<div class="col- col-xs-12 col-md-7 col-lg-8 col-9">
-		<h1>Suthep Chanchuphol</h1>
+		<h1>Suthep Chanchuphol <small>(@rootEnginear)</small></h1>
 		<blockquote>
 			Junior Frontend Developer at <AppExternalLink href="https://punchup.world/" noIcon
 				>Punch Up</AppExternalLink
